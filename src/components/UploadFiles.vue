@@ -1,6 +1,7 @@
 <template>
     <div class="fm-uplaod-container"
          :id="uploadId"
+         ref="uploadId"
     >
         <div class="el-upload ">
             <el-button size="mini" type="default">浏览...</el-button>

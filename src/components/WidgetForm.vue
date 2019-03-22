@@ -15,14 +15,13 @@
                         <div v-if="element && element.key" class="widget-grid-container data-grid" :key="element.key"
                              style="position: relative;">
                             <el-row class="widget-grid "
-                                    type="flex"
+
                                     :class="{active: selectWidget.key == element.key}"
                                     :gutter="element.options.gutter ? element.options.gutter : 0"
-                                    :justify="element.options.justify"
                                     :align="element.options.align"
                                     @click.native="handleSelectWidget(index)">
                                 <el-col v-for="(col, colIndex) in element.columns" :key="colIndex"
-                                        :span="col.span ? col.span : 0">
+                                        :span="col.span ? col.span : 0" >
                                     <div style="border: 1px dashed #999;">
                                         <draggable
                                                 class="widget-form-list"

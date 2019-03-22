@@ -6,7 +6,6 @@
             center
             :width="width"
             ref="dicDialog"
-            :id="id"
             :append-to-body="true"
     >
         <el-input

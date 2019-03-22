@@ -2,23 +2,21 @@
   <div>
     <el-form ref="generateForm" :model="models" :rules="rules" :label-position="data.config.labelPosition" :label-width="data.config.labelWidth + 'px'" v-bind:style="{fontFamily:data.config.fontFamily}">
       <template v-for="item in data.list">
-
         <template v-if="item.type == 'grid'">
           <el-row
             :key="item.key"
-            type="flex"
+            :type="!item.options.isReactive?'flex':''"
             :gutter="item.options.gutter ? item.options.gutter : 0"
-            :justify="item.options.justify"
+            :justify="!item.options.isReactive?item.options.justify:''"
             :align="item.options.align"
-          >
-            <el-col v-for="(col, colIndex) in item.columns" :key="colIndex" :span="col.span">
-              
 
+          >
+            <el-col v-for="(col, colIndex) in item.columns" :key="colIndex" :span="col.span" :xs="isMobile?(col.span ? 24 : 0):(col.span ? col.span : 0)" :sm="isMobile?(col.span ? 24 : 0):(col.span ? col.span : 0)" :md="isMobile?(col.span ? 24 : 0):(col.span ? col.span : 0)" :lg="isMobile?(col.span ? 24 : 0):(col.span ? col.span : 0)">
               <template v-for="citem in col.list" >
                 <el-form-item v-if="citem.type=='blank'" :label="citem.name" :prop="citem.model" :key="citem.key">
                   <slot :name="citem.model" :model="models"></slot>
                 </el-form-item>
-                <genetate-form-item v-else :key="citem.key" :models.sync="models" :remote="remote" :rules="rules" :widget="citem" :widgetFormConfig="data.config"></genetate-form-item>
+                <genetate-form-item v-else :key="citem.key" :models.sync="models" :remote="remote" :rules="rules" :widget="citem" :widgetFormConfig="data.config" ref="genetateFormItemGrid"></genetate-form-item>
               </template>
             </el-col>
           </el-row>
@@ -31,7 +29,7 @@
         </template>
 
         <template v-else>
-          <genetate-form-item :key="item.key" :models.sync="models" :rules="rules" :widget="item" :remote="remote" :widgetFormConfig="data.config"></genetate-form-item>
+          <genetate-form-item :key="item.key" :models.sync="models" :rules="rules" :widget="item" :remote="remote" :widgetFormConfig="data.config" ref="genetateFormItem"></genetate-form-item>
         </template>
         
       </template>
@@ -40,8 +38,8 @@
 </template>
 
 <script>
-    import GenetateFormItem from './GenerateFormItem'
-
+  import GenetateFormItem from './GenerateFormItem'
+  /* import "@/assets/css/element-display.css";*/
     export default {
   name: 'fm-generate-form',
   components: {
@@ -51,7 +49,8 @@
   data () {
     return {
       models: {},
-      rules: {}
+      rules: {},
+      isMobile:this.GLOBAL.isMobile
     }
   },
   created () {

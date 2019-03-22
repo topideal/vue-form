@@ -1,5 +1,8 @@
 <template>
-    <el-form-item :label="widget.options.showLabel?widget.name:''" :prop="widget.model">
+    <el-form-item :label="widget.options.showLabel?widget.name:''" :prop="widget.model"
+                  class="widget-view "
+                  :class="{'is_req': widget.options.required}"
+    >
         <template v-if="widget.type == 'separation'">
             <div :style="{paddingTop:widget.options.padding.top+'px',paddingBottom:widget.options.padding.bottom+'px'}">
                 <div :style="{border:'0px',height:widget.options.size.height+'px' ,width:widget.options.size.width+'%',backgroundColor:widget.options.fontcolor,margin:'0 auto'}"
@@ -35,23 +38,23 @@
         </template>
 
         <template v-if="widget.type == 'saveBtn'">
-            <div>
-                <el-button type="primary" @click="handleSaveBtn">保 存</el-button>
+            <div align="center">
+                <el-button type="primary" @click="widget.options.actionName" v-if="widget.options.action=='click'">保 存</el-button>
             </div>
         </template>
 
         <template v-if="widget.type == 'submitBtn'">
-            <div>
-                <el-button type="primary" @click="handleSubmitBtn">提 交</el-button>
+            <div align="center">
+                <el-button type="primary" @click="widget.options.actionName" v-if="widget.options.action=='click'">提 交</el-button>
             </div>
         </template>
         <template v-if="widget.type == 'closeBtn'">
-            <div>
+            <div align="center">
                 <el-button type="primary" id="closeBtn" @click="handleCloseBtn">关 闭</el-button>
             </div>
         </template>
         <template v-if="widget.type == 'backBtn'">
-            <div>
+            <div align="center">
                 <el-button type="primary" @click="handleBackBtn">返 回</el-button>
             </div>
         </template>
@@ -89,7 +92,7 @@
         </template>
         <template v-if="widget.type == 'user'">
             <div>
-                <treeselect :id="widget.model" v-model="dataModel"
+                <treeselect :id="widget.model" :ref="widget.model" v-model="dataModel"
                             :disabled="widget.options.disabled"
                             :multiple="widget.options.multiple"
                             :clearable="widget.options.clearable"
@@ -138,6 +141,7 @@
                     v-if="widget.options.dataType == 'number' || widget.options.dataType == 'integer' || widget.options.dataType == 'float'"
                     :type="widget.options.dataType"
                     :id="widget.model"
+                    :ref="widget.model"
                     v-model.number="dataModel"
                     :placeholder="widget.options.placeholder"
                     :style="{width: widget.options.width}"
@@ -147,6 +151,7 @@
                     v-else
                     :type="widget.options.dataType"
                     :id="widget.model"
+                    :ref="widget.model"
                     v-model="dataModel"
                     :placeholder="widget.options.placeholder"
                     :style="{width: widget.options.width}"
@@ -161,6 +166,7 @@
             <el-input type="textarea" :autosize="{minRows:2,maxRows:30}"
                       v-model="dataModel"
                       :id="widget.model"
+                      :ref="widget.model"
                       :placeholder="widget.options.placeholder"
                       :style="{width: widget.options.width}"
                       :readonly="widget.options.readonly"
@@ -168,13 +174,14 @@
         </template>
         <template v-if="widget.type == 'tinymce'">
             <div>
-                <tinymce-editor :id="widget.model" v-model="dataModel" :disabled="widget.options.disabled"></tinymce-editor>
+                <tinymce-editor :id="widget.model" :ref="widget.model"  v-model="dataModel" :disabled="widget.options.disabled"></tinymce-editor>
             </div>
 
         </template>
         <template v-if="widget.type == 'number'">
             <el-input-number
                     :id="widget.model"
+                    :ref="widget.model"
                     v-model="dataModel"
                     :style="{width: widget.options.width}"
                     :step="widget.options.step"
@@ -186,6 +193,7 @@
         <template v-if="widget.type == 'radio'">
             <el-radio-group v-model="dataModel"
                             :id="widget.model"
+                            :ref="widget.model"
                             :style="{width: widget.options.width}"
                             :disabled="widget.options.disabled"
             >
@@ -204,6 +212,7 @@
         <template v-if="widget.type == 'checkbox'">
             <el-checkbox-group v-model="dataModel"
                                :id="widget.model"
+                               :ref="widget.model"
                                :style="{width: widget.options.width}"
                                :disabled="widget.options.disabled"
             >
@@ -224,6 +233,7 @@
             <el-time-picker
                     v-model="dataModel"
                     :id="widget.model"
+                    :ref="widget.model"
                     :is-range="widget.options.isRange"
                     :placeholder="widget.options.placeholder"
                     :start-placeholder="widget.options.startPlaceholder"
@@ -243,6 +253,7 @@
             <el-date-picker
                     v-model="dataModel"
                     :id="widget.model"
+                    :ref="widget.model"
                     :type="widget.options.type"
                     :placeholder="widget.options.placeholder"
                     :start-placeholder="widget.options.startPlaceholder"
@@ -261,6 +272,7 @@
         <template v-if="widget.type =='rate'">
             <el-rate v-model="dataModel"
                      :id="widget.model"
+                     :ref="widget.model"
                      :max="widget.options.max"
                      :disabled="widget.options.disabled"
                      :allow-half="widget.options.allowHalf"
@@ -271,6 +283,7 @@
             <el-color-picker
                     v-model="dataModel"
                     :id="widget.model"
+                    :ref="widget.model"
                     :disabled="widget.options.disabled"
                     :show-alpha="widget.options.showAlpha"
             ></el-color-picker>
@@ -280,6 +293,7 @@
             <el-select
                     v-model="dataModel"
                     :id="widget.model"
+                    :ref="widget.model"
                     :disabled="widget.options.disabled"
                     :multiple="widget.options.multiple"
                     :clearable="widget.options.clearable"
@@ -297,6 +311,7 @@
             <el-switch
                     v-model="dataModel"
                     :id="widget.model"
+                    :ref="widget.model"
                     :disabled="widget.options.disabled"
             >
             </el-switch>
@@ -306,6 +321,7 @@
             <el-slider
                     v-model="dataModel"
                     :id="widget.model"
+                    :ref="widget.model"
                     :min="widget.options.min"
                     :max="widget.options.max"
                     :disabled="widget.options.disabled"
@@ -321,6 +337,7 @@
             <fm-upload
                     v-model="dataModel"
                     :id="widget.model"
+                    :ref="widget.model"
                     :disabled="widget.options.disabled"
                     :style="{'width': widget.options.width}"
                     :width="widget.options.size.width"
@@ -334,6 +351,7 @@
                 <el-input
                         v-model="dataModel"
                         :id="widget.model"
+                        :ref="widget.model"
                         :placeholder="widget.options.placeholder"
                         :style="{width: widget.options.width}"
                         :readonly="widget.options.readonly"

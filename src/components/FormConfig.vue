@@ -2,7 +2,7 @@
     <div class="form-config-container">
         <el-form label-position="top">
             <el-form-item label="标签对齐方式">
-                <el-radio-group v-model="data.labelPosition">
+                <el-radio-group v-model="data.labelPosition" size="mini">
                     <el-radio-button label="left">左对齐</el-radio-button>
                     <el-radio-button label="right">右对齐</el-radio-button>
                     <el-radio-button label="top">顶部对齐</el-radio-button>

@@ -29,7 +29,8 @@
 
 <style lang="scss">
     .fm-container {
-        height: calc(100% - 50px);
+       /* height: calc(100% - 50px);*/
+        height:100%;
     }
 
     *, :after, :before {

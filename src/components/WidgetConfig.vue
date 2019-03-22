@@ -282,7 +282,21 @@
                     </el-time-picker>
                 </el-form-item>
             </template>
-            <template v-if="Object.keys(data.options).indexOf('js')>=0">
+            <template v-if="data.type == 'saveBtn' || data.type == 'submitBtn'">
+                <el-form-item label="事件">
+                    <el-select v-model="data.options.action">
+                        <el-option value="click" label="单击"></el-option>
+                        <el-option value="change" label="值改变"></el-option>
+                    </el-select>
+                </el-form-item>
+                <el-form-item label="事件名称">
+                    <el-input v-model="data.options.actionName"></el-input>
+                </el-form-item>
+
+
+
+            </template>
+            <template v-if="Object.keys(data.options).indexOf('js')>=0 || data.type == 'saveBtn' || data.type == 'submitBtn'">
                 <el-input type="textarea" :rows="5"
                           v-model="data.options.js"></el-input>
             </template>
@@ -313,6 +327,11 @@
                 <el-form-item label="栅格间隔">
                     <el-input type="number" v-model.number="data.options.gutter"></el-input>
                 </el-form-item>
+                <el-form-item label="响应式" >
+                    <el-switch v-model="data.options.isReactive">
+                    </el-switch>
+                </el-form-item>
+
                 <el-form-item label="列配置项">
                     <draggable element="ul" :list="data.columns"
                                :options="{group:{ name:'options'}, ghostClass: 'ghost',handle: '.drag-item'}"
@@ -333,7 +352,7 @@
                         <el-button type="text" @click="handleAddColumn">添加列</el-button>
                     </div>
                 </el-form-item>
-                <el-form-item label="水平排列方式">
+                <!--<el-form-item label="水平排列方式" v-if="!data.options.isReactive">
                     <el-select v-model="data.options.justify">
                         <el-option value="start" label="左对齐"></el-option>
                         <el-option value="end" label="右对齐"></el-option>
@@ -348,7 +367,7 @@
                         <el-option value="middle" label="居中"></el-option>
                         <el-option value="bottom" label="底部对齐"></el-option>
                     </el-select>
-                </el-form-item>
+                </el-form-item>-->
             </template>
 
 

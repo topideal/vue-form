@@ -87,6 +87,13 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "005e":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "0190":
 /***/ (function(module, exports) {
 
@@ -3692,18 +3699,6 @@ exports.default = {
 
 /***/ }),
 
-/***/ "1e3a":
-/***/ (function(module, exports, __webpack_require__) {
-
-var redefine = __webpack_require__("f57d");
-module.exports = function (target, src, safe) {
-  for (var key in src) redefine(target, key, src[key], safe);
-  return target;
-};
-
-
-/***/ }),
-
 /***/ "1e3f":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3714,6 +3709,17 @@ module.exports = function (target, src, safe) {
 //   ES2015:
 //     import 'tinymce/plugins/code'
 __webpack_require__("66d1");
+
+/***/ }),
+
+/***/ "1eaa":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_0_5_0_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_1_0_1_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_15_5_0_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_1_2_5_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_5_0_vue_loader_lib_index_js_vue_loader_options_TinymceEditor_vue_vue_type_style_index_0_id_204b8644_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("005e");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_0_5_0_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_1_0_1_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_15_5_0_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_1_2_5_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_5_0_vue_loader_lib_index_js_vue_loader_options_TinymceEditor_vue_vue_type_style_index_0_id_204b8644_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_0_5_0_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_1_0_1_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_15_5_0_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_1_2_5_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_5_0_vue_loader_lib_index_js_vue_loader_options_TinymceEditor_vue_vue_type_style_index_0_id_204b8644_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_0_5_0_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_1_0_1_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_15_5_0_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_1_2_5_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_5_0_vue_loader_lib_index_js_vue_loader_options_TinymceEditor_vue_vue_type_style_index_0_id_204b8644_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -3830,15 +3836,12 @@ var web_dom_iterable = __webpack_require__("3f87");
 // EXTERNAL MODULE: ./node_modules/_core-js@2.6.1@core-js/modules/es6.function.name.js
 var es6_function_name = __webpack_require__("c839");
 
-// EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
-var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
-
-// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/GenerateForm.vue?vue&type=template&id=636bb2da&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-form',{ref:"generateForm",style:({fontFamily:_vm.data.config.fontFamily}),attrs:{"model":_vm.models,"rules":_vm.rules,"label-position":_vm.data.config.labelPosition,"label-width":_vm.data.config.labelWidth + 'px'}},[_vm._l((_vm.data.list),function(item){return [(item.type == 'grid')?[_c('el-row',{key:item.key,attrs:{"type":"flex","gutter":item.options.gutter ? item.options.gutter : 0,"justify":item.options.justify,"align":item.options.align}},_vm._l((item.columns),function(col,colIndex){return _c('el-col',{key:colIndex,attrs:{"span":col.span}},[_vm._l((col.list),function(citem){return [(citem.type=='blank')?_c('el-form-item',{key:citem.key,attrs:{"label":citem.name,"prop":citem.model}},[_vm._t(citem.model,null,{model:_vm.models})],2):_c('genetate-form-item',{key:citem.key,attrs:{"models":_vm.models,"remote":_vm.remote,"rules":_vm.rules,"widget":citem,"widgetFormConfig":_vm.data.config},on:{"update:models":function($event){_vm.models=$event}}})]})],2)}),1)]:(item.type == 'blank')?[_c('el-form-item',{key:item.key,attrs:{"label":item.name,"prop":item.model}},[_vm._t(item.model,null,{model:_vm.models})],2)]:[_c('genetate-form-item',{key:item.key,attrs:{"models":_vm.models,"rules":_vm.rules,"widget":item,"remote":_vm.remote,"widgetFormConfig":_vm.data.config},on:{"update:models":function($event){_vm.models=$event}}})]]})],2)],1)}
+// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/GenerateForm.vue?vue&type=template&id=9c6baa6a&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-form',{ref:"generateForm",style:({fontFamily:_vm.data.config.fontFamily}),attrs:{"model":_vm.models,"rules":_vm.rules,"label-position":_vm.data.config.labelPosition,"label-width":_vm.data.config.labelWidth + 'px'}},[_vm._l((_vm.data.list),function(item){return [(item.type == 'grid')?[_c('el-row',{key:item.key,attrs:{"type":!item.options.isReactive?'flex':'',"gutter":item.options.gutter ? item.options.gutter : 0,"justify":!item.options.isReactive?item.options.justify:'',"align":item.options.align}},_vm._l((item.columns),function(col,colIndex){return _c('el-col',{key:colIndex,attrs:{"span":col.span,"xs":_vm.isMobile?(col.span ? 24 : 0):(col.span ? col.span : 0),"sm":_vm.isMobile?(col.span ? 24 : 0):(col.span ? col.span : 0),"md":_vm.isMobile?(col.span ? 24 : 0):(col.span ? col.span : 0),"lg":_vm.isMobile?(col.span ? 24 : 0):(col.span ? col.span : 0)}},[_vm._l((col.list),function(citem){return [(citem.type=='blank')?_c('el-form-item',{key:citem.key,attrs:{"label":citem.name,"prop":citem.model}},[_vm._t(citem.model,null,{model:_vm.models})],2):_c('genetate-form-item',{key:citem.key,ref:"genetateFormItem",refInFor:true,attrs:{"models":_vm.models,"remote":_vm.remote,"rules":_vm.rules,"widget":citem,"widgetFormConfig":_vm.data.config},on:{"update:models":function($event){_vm.models=$event}}})]})],2)}),1)]:(item.type == 'blank')?[_c('el-form-item',{key:item.key,attrs:{"label":item.name,"prop":item.model}},[_vm._t(item.model,null,{model:_vm.models})],2)]:[_c('genetate-form-item',{key:item.key,ref:"genetateFormItem1",refInFor:true,attrs:{"models":_vm.models,"rules":_vm.rules,"widget":item,"remote":_vm.remote,"widgetFormConfig":_vm.data.config},on:{"update:models":function($event){_vm.models=$event}}})]]})],2)],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/GenerateForm.vue?vue&type=template&id=636bb2da&
+// CONCATENATED MODULE: ./src/components/GenerateForm.vue?vue&type=template&id=9c6baa6a&
 
 // EXTERNAL MODULE: ./node_modules/_@babel_runtime-corejs2@7.2.0@@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js
 var get_own_property_descriptor = __webpack_require__("4a77");
@@ -3944,40 +3947,72 @@ function _nonIterableSpread() {
 function _toConsumableArray(arr) {
   return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
 }
-// EXTERNAL MODULE: ./node_modules/_core-js@2.6.1@core-js/modules/es6.array.iterator.js
-var es6_array_iterator = __webpack_require__("ff66");
-
-// EXTERNAL MODULE: ./node_modules/_core-js@2.6.1@core-js/modules/es6.promise.js
-var es6_promise = __webpack_require__("ea23");
-
-// EXTERNAL MODULE: ./node_modules/_core-js@2.6.1@core-js/modules/es7.promise.finally.js
-var es7_promise_finally = __webpack_require__("dbff");
-
-// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/GenerateFormItem.vue?vue&type=template&id=19ed389c&
-var GenerateFormItemvue_type_template_id_19ed389c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-form-item',{attrs:{"label":_vm.widget.options.showLabel?_vm.widget.name:'',"prop":_vm.widget.model}},[(_vm.widget.type == 'separation')?[_c('div',{style:({paddingTop:_vm.widget.options.padding.top+'px',paddingBottom:_vm.widget.options.padding.bottom+'px'})},[(_vm.widget.options.fontalign== 'center')?_c('div',{style:({border:'0px',height:_vm.widget.options.size.height+'px' ,width:_vm.widget.options.size.width+'%',backgroundColor:_vm.widget.options.fontcolor,margin:'0 auto'})}):_vm._e(),(_vm.widget.options.fontalign!= 'center')?_c('div',{style:({border:'0px',height:_vm.widget.options.size.height+'px' ,width:_vm.widget.options.size.width+'%',backgroundColor:_vm.widget.options.fontcolor,float:_vm.widget.options.fontalign})}):_vm._e()])]:_vm._e(),(_vm.widget.type == 'label')?[_c('div',[_c('div',{style:({paddingTop:_vm.widget.options.padding.top+'px',paddingBottom:_vm.widget.options.padding.bottom+'px',color:_vm.widget.options.fontcolor,textAlign:_vm.widget.options.fontalign,fontSize:_vm.widget.options.fontsize+'px',lineHeight:1})},[_vm._v("\n                "+_vm._s(_vm.widget.name)+"\n            ")])])]:_vm._e(),(_vm.widget.type == 'button')?[_c('div',{style:({paddingTop:_vm.widget.options.padding.top+'px',paddingBottom:_vm.widget.options.padding.bottom+'px',color:_vm.widget.options.fontcolor,textAlign:_vm.widget.options.fontalign,fontSize:_vm.widget.options.fontsize+'px',lineHeight:1})},[_c('el-button',[_vm._v(_vm._s(_vm.widget.name))])],1)]:_vm._e(),(_vm.widget.type == 'link')?[_c('div',{style:({paddingTop:_vm.widget.options.padding.top+'px',paddingBottom:_vm.widget.options.padding.bottom+'px',color:_vm.widget.options.fontcolor,textAlign:_vm.widget.options.fontalign,fontSize:_vm.widget.options.fontsize+'px',lineHeight:1})},[_c('el-button',{attrs:{"type":"text","click":_vm.widget.options.js}},[_vm._v(_vm._s(_vm.widget.name))])],1)]:_vm._e(),(_vm.widget.type == 'js')?[_c('div',{style:({paddingTop:_vm.widget.options.padding.top+'px',paddingBottom:_vm.widget.options.padding.bottom+'px',color:_vm.widget.options.fontcolor,textAlign:_vm.widget.options.fontalign,fontSize:_vm.widget.options.fontsize+'px',lineHeight:1}),domProps:{"innerHTML":_vm._s(_vm.widget.options.js)}},[_vm._v("\n            "+_vm._s(_vm.widget.options.js)+"\n        ")])]:_vm._e(),(_vm.widget.type == 'saveBtn')?[_c('div',[_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.handleSaveBtn}},[_vm._v("保 存")])],1)]:_vm._e(),(_vm.widget.type == 'submitBtn')?[_c('div',[_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.handleSubmitBtn}},[_vm._v("提 交")])],1)]:_vm._e(),(_vm.widget.type == 'passBtn')?[_c('div',[_c('el-button',{attrs:{"type":"success"},on:{"click":_vm.handlePassBtn}},[_vm._v("同 意")])],1)]:_vm._e(),(_vm.widget.type == 'rejectBtn')?[_c('div',[_c('el-button',{attrs:{"type":"danger"},on:{"click":_vm.handleRejectBtn}},[_vm._v("退 回")])],1)]:_vm._e(),(_vm.widget.type == 'org')?[_c('div',[_c('treeselect',{attrs:{"disabled":_vm.widget.options.disabled,"multiple":_vm.widget.options.multiple,"clearable":_vm.widget.options.clearable,"options":_vm.widget.options.remoteOptions,"value_consists_of":_vm.widget.options.valueConsistsOf,"disable-branch-nodes":true,"show-count":true,"placeholder":_vm.widget.options.placeholder,"default_expand_level":1},scopedSlots:_vm._u([{key:"option-label",fn:function(ref){
+// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/GenerateFormItem.vue?vue&type=template&id=547e009d&
+var GenerateFormItemvue_type_template_id_547e009d_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-form-item',{attrs:{"label":_vm.widget.options.showLabel?_vm.widget.name:'',"prop":_vm.widget.model}},[(_vm.widget.type == 'separation')?[_c('div',{style:({paddingTop:_vm.widget.options.padding.top+'px',paddingBottom:_vm.widget.options.padding.bottom+'px'})},[(_vm.widget.options.fontalign== 'center')?_c('div',{style:({border:'0px',height:_vm.widget.options.size.height+'px' ,width:_vm.widget.options.size.width+'%',backgroundColor:_vm.widget.options.fontcolor,margin:'0 auto'})}):_vm._e(),(_vm.widget.options.fontalign!= 'center')?_c('div',{style:({border:'0px',height:_vm.widget.options.size.height+'px' ,width:_vm.widget.options.size.width+'%',backgroundColor:_vm.widget.options.fontcolor,float:_vm.widget.options.fontalign})}):_vm._e()])]:_vm._e(),(_vm.widget.type == 'label')?[_c('div',[_c('div',{style:({paddingTop:_vm.widget.options.padding.top+'px',paddingBottom:_vm.widget.options.padding.bottom+'px',color:_vm.widget.options.fontcolor,textAlign:_vm.widget.options.fontalign,fontSize:_vm.widget.options.fontsize+'px',lineHeight:1})},[_vm._v("\n                "+_vm._s(_vm.widget.name)+"\n            ")])])]:_vm._e(),(_vm.widget.type == 'button')?[_c('div',{style:({paddingTop:_vm.widget.options.padding.top+'px',paddingBottom:_vm.widget.options.padding.bottom+'px',color:_vm.widget.options.fontcolor,textAlign:_vm.widget.options.fontalign,fontSize:_vm.widget.options.fontsize+'px',lineHeight:1})},[_c('el-button',[_vm._v(_vm._s(_vm.widget.name))])],1)]:_vm._e(),(_vm.widget.type == 'link')?[_c('div',{style:({paddingTop:_vm.widget.options.padding.top+'px',paddingBottom:_vm.widget.options.padding.bottom+'px',color:_vm.widget.options.fontcolor,textAlign:_vm.widget.options.fontalign,fontSize:_vm.widget.options.fontsize+'px',lineHeight:1})},[_c('el-button',{attrs:{"type":"text","click":_vm.widget.options.js}},[_vm._v(_vm._s(_vm.widget.name))])],1)]:_vm._e(),(_vm.widget.type == 'js')?[_c('div',{style:({paddingTop:_vm.widget.options.padding.top+'px',paddingBottom:_vm.widget.options.padding.bottom+'px',color:_vm.widget.options.fontcolor,textAlign:_vm.widget.options.fontalign,fontSize:_vm.widget.options.fontsize+'px',lineHeight:1}),domProps:{"innerHTML":_vm._s(_vm.widget.options.js)}},[_vm._v("\n            "+_vm._s(_vm.widget.options.js)+"\n        ")])]:_vm._e(),(_vm.widget.type == 'saveBtn')?[_c('div',{attrs:{"align":"center"}},[(_vm.widget.options.action=='click')?_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.widget.options.actionName}},[_vm._v("保 存")]):_vm._e()],1)]:_vm._e(),(_vm.widget.type == 'submitBtn')?[_c('div',{attrs:{"align":"center"}},[(_vm.widget.options.action=='click')?_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.widget.options.actionName}},[_vm._v("提 交")]):_vm._e()],1)]:_vm._e(),(_vm.widget.type == 'closeBtn')?[_c('div',{attrs:{"align":"center"}},[_c('el-button',{attrs:{"type":"primary","id":"closeBtn"},on:{"click":_vm.handleCloseBtn}},[_vm._v("关 闭")])],1)]:_vm._e(),(_vm.widget.type == 'backBtn')?[_c('div',{attrs:{"align":"center"}},[_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.handleBackBtn}},[_vm._v("返 回")])],1)]:_vm._e(),(_vm.widget.type == 'passBtn')?[_c('div',[_c('el-button',{attrs:{"type":"success"},on:{"click":_vm.handlePassBtn}},[_vm._v("同 意")])],1)]:_vm._e(),(_vm.widget.type == 'rejectBtn')?[_c('div',[_c('el-button',{attrs:{"type":"danger"},on:{"click":_vm.handleRejectBtn}},[_vm._v("退 回")])],1)]:_vm._e(),(_vm.widget.type == 'org')?[_c('div',[_c('treeselect',{attrs:{"disabled":_vm.widget.options.disabled,"multiple":_vm.widget.options.multiple,"clearable":_vm.widget.options.clearable,"options":_vm.orgOptions,"load-options":_vm.handleOrgRemoteFunc,"value_consists_of":_vm.widget.options.valueConsistsOf,"disable-branch-nodes":true,"show-count":true,"placeholder":_vm.widget.options.placeholder,"default_expand_level":1},scopedSlots:_vm._u([{key:"option-label",fn:function(ref){
 var node = ref.node;
 var shouldShowCount = ref.shouldShowCount;
 var count = ref.count;
 var labelClassName = ref.labelClassName;
 var countClassName = ref.countClassName;
-return _c('label',{},[_vm._v("\n                    "+_vm._s(node.label)+" "),(shouldShowCount)?_c('span',[_vm._v("("+_vm._s(count)+")")]):_vm._e()])}}]),model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})],1)]:_vm._e(),(_vm.widget.type == 'user')?[_c('div',[_c('treeselect',{attrs:{"disabled":_vm.widget.options.disabled,"multiple":_vm.widget.options.multiple,"clearable":_vm.widget.options.clearable,"options":_vm.widget.options.remoteOptions,"value_consists_of":_vm.widget.options.valueConsistsOf,"disable-branch-nodes":true,"show-count":true,"placeholder":_vm.widget.options.placeholder,"default_expand_level":1},scopedSlots:_vm._u([{key:"option-label",fn:function(ref){
+return _c('label',{},[_vm._v("\n                    "+_vm._s(node.label)+" "),(shouldShowCount)?_c('span',[_vm._v("("+_vm._s(count)+")")]):_vm._e()])}}]),model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})],1)]:_vm._e(),(_vm.widget.type == 'user')?[_c('div',[_c('treeselect',{ref:_vm.widget.model,attrs:{"id":_vm.widget.model,"disabled":_vm.widget.options.disabled,"multiple":_vm.widget.options.multiple,"clearable":_vm.widget.options.clearable,"options":_vm.orgUserOptions,"load-options":_vm.handleUserRemoteFunc,"value_consists_of":_vm.widget.options.valueConsistsOf,"disable-branch-nodes":true,"show-count":true,"placeholder":_vm.widget.options.placeholder,"default_expand_level":1},scopedSlots:_vm._u([{key:"option-label",fn:function(ref){
 var node = ref.node;
 var shouldShowCount = ref.shouldShowCount;
 var count = ref.count;
 var labelClassName = ref.labelClassName;
 var countClassName = ref.countClassName;
-return _c('label',{},[_vm._v("\n                    "+_vm._s(node.label)+" "),(shouldShowCount)?_c('span',[_vm._v("("+_vm._s(count)+")")]):_vm._e()])}}]),model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})],1)]:_vm._e(),(_vm.widget.type == 'eltable')?[_c('div',{style:({'width': _vm.widget.options.width})},[_c('div',{staticStyle:{"width":"100%","padding-bottom":"10px"},attrs:{"align":"right"}},[_c('el-button',{attrs:{"type":"primary"},on:{"click":function($event){_vm.$refs.editable.insert({})}}},[_vm._v("新增")]),_c('el-button',{attrs:{"type":"danger"},on:{"click":function($event){_vm.$refs.editable.removeSelecteds()}}},[_vm._v("删除选中")]),_c('el-button',{attrs:{"type":"danger"},on:{"click":function($event){_vm.$refs.editable.clear()}}},[_vm._v("清空所有")]),_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.getAllTableData}},[_vm._v("保存")])],1),_c('el-editable',{ref:"editable",attrs:{"data":_vm.tableList},on:{"update:data":function($event){_vm.tableList=$event}}},[_c('el-editable-column',{attrs:{"type":"selection","width":"55"}}),_c('el-editable-column',{attrs:{"type":"index","width":"55"}}),_vm._l((_vm.widget.options.options),function(item,index){return _c('el-editable-column',{key:index,attrs:{"prop":item.value,"label":item.label,"editRender":{name: 'ElInput'}}})}),_c('el-editable-column',{attrs:{"label":"操作"},scopedSlots:_vm._u([{key:"default",fn:function(scope){return [_c('el-button',{attrs:{"size":"mini","type":"danger"},on:{"click":function($event){_vm.removeEvent(scope.row, scope.$index)}}},[_vm._v("删除\n                        ")])]}}])})],2)],1)]:_vm._e(),(_vm.widget.type == 'input')?[(_vm.widget.options.dataType == 'number' || _vm.widget.options.dataType == 'integer' || _vm.widget.options.dataType == 'float')?_c('el-input',{style:({width: _vm.widget.options.width}),attrs:{"type":_vm.widget.options.dataType,"placeholder":_vm.widget.options.placeholder,"readonly":_vm.widget.options.readonly},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=_vm._n($$v)},expression:"dataModel"}}):_c('el-input',{style:({width: _vm.widget.options.width}),attrs:{"type":_vm.widget.options.dataType,"placeholder":_vm.widget.options.placeholder,"readonly":_vm.widget.options.readonly},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type == 'textarea')?[_c('el-input',{style:({width: _vm.widget.options.width}),attrs:{"type":"textarea","autosize":{minRows:2,maxRows:30},"placeholder":_vm.widget.options.placeholder,"readonly":_vm.widget.options.readonly},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type == 'tinymce')?[_c('div',[_c('tinymce-editor',{attrs:{"disabled":_vm.widget.options.disabled},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})],1)]:_vm._e(),(_vm.widget.type == 'number')?[_c('el-input-number',{style:({width: _vm.widget.options.width}),attrs:{"step":_vm.widget.options.step,"readonly":_vm.widget.options.readonly,"controls-position":"right"},model:{value:(_vm.widget.options.defaultValue),callback:function ($$v) {_vm.$set(_vm.widget.options, "defaultValue", $$v)},expression:"widget.options.defaultValue"}})]:_vm._e(),(_vm.widget.type == 'radio')?[_c('el-radio-group',{style:({width: _vm.widget.options.width}),attrs:{"disabled":_vm.widget.options.disabled},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}},_vm._l(((_vm.widget.options.remote ? _vm.widget.options.remoteOptions : _vm.widget.options.options)),function(item,index){return _c('el-radio',{key:index,style:({display: _vm.widget.options.inline ? 'inline-block' : 'block'}),attrs:{"label":item.value}},[(_vm.widget.options.remote)?[_vm._v(_vm._s(item.label))]:[_vm._v(_vm._s(_vm.widget.options.showLabel ? item.label : item.value))]],2)}),1)]:_vm._e(),(_vm.widget.type == 'checkbox')?[_c('el-checkbox-group',{style:({width: _vm.widget.options.width}),attrs:{"disabled":_vm.widget.options.disabled},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}},_vm._l(((_vm.widget.options.remote ? _vm.widget.options.remoteOptions : _vm.widget.options.options)),function(item,index){return _c('el-checkbox',{key:index,style:({display: _vm.widget.options.inline ? 'inline-block' : 'block'}),attrs:{"label":item.value}},[(_vm.widget.options.remote)?[_vm._v(_vm._s(item.label))]:[_vm._v(_vm._s(_vm.widget.options.showLabel ? item.label : item.value))]],2)}),1)]:_vm._e(),(_vm.widget.type == 'time')?[_c('el-time-picker',{style:({width: _vm.widget.options.width}),attrs:{"is-range":_vm.widget.options.isRange,"placeholder":_vm.widget.options.placeholder,"start-placeholder":_vm.widget.options.startPlaceholder,"end-placeholder":_vm.widget.options.endPlaceholder,"readonly":_vm.widget.options.readonly,"disabled":_vm.widget.options.disabled,"editable":_vm.widget.options.editable,"clearable":_vm.widget.options.clearable,"arrowControl":_vm.widget.options.arrowControl,"value-format":_vm.widget.options.format},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type=='date')?[_c('el-date-picker',{style:({width: _vm.widget.options.width}),attrs:{"type":_vm.widget.options.type,"placeholder":_vm.widget.options.placeholder,"start-placeholder":_vm.widget.options.startPlaceholder,"end-placeholder":_vm.widget.options.endPlaceholder,"readonly":_vm.widget.options.readonly,"disabled":_vm.widget.options.disabled,"editable":_vm.widget.options.editable,"clearable":_vm.widget.options.clearable,"value-format":_vm.widget.options.timestamp ? 'timestamp' : _vm.widget.options.format,"format":_vm.widget.options.format},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type =='rate')?[_c('el-rate',{attrs:{"max":_vm.widget.options.max,"disabled":_vm.widget.options.disabled,"allow-half":_vm.widget.options.allowHalf},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type == 'color')?[_c('el-color-picker',{attrs:{"disabled":_vm.widget.options.disabled,"show-alpha":_vm.widget.options.showAlpha},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type == 'select')?[_c('el-select',{style:({width: _vm.widget.options.width}),attrs:{"disabled":_vm.widget.options.disabled,"multiple":_vm.widget.options.multiple,"clearable":_vm.widget.options.clearable,"placeholder":_vm.widget.options.placeholder},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}},_vm._l(((_vm.widget.options.remote ? _vm.widget.options.remoteOptions : _vm.widget.options.options)),function(item){return _c('el-option',{key:item.value,attrs:{"value":item.value,"label":_vm.widget.options.showLabel || _vm.widget.options.remote?item.label:item.value}})}),1)]:_vm._e(),(_vm.widget.type=='switch')?[_c('el-switch',{attrs:{"disabled":_vm.widget.options.disabled},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type=='slider')?[_c('el-slider',{style:({width: _vm.widget.options.width}),attrs:{"min":_vm.widget.options.min,"max":_vm.widget.options.max,"disabled":_vm.widget.options.disabled,"step":_vm.widget.options.step,"show-input":_vm.widget.options.showInput,"range":_vm.widget.options.range},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type=='imgupload')?[_c('fm-upload',{style:({'width': _vm.widget.options.width}),attrs:{"disabled":_vm.widget.options.disabled,"width":_vm.widget.options.size.width,"height":_vm.widget.options.size.height},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type == 'dictionary')?[_c('div',[_c('el-input',{style:({width: _vm.widget.options.width}),attrs:{"placeholder":_vm.widget.options.placeholder,"readonly":_vm.widget.options.readonly},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}},[_c('el-button',{attrs:{"slot":"append","icon":"el-icon-more"},on:{"click":function($event){_vm.handleOpenDicDialog(_vm.widget.options.props.id,_vm.widget.model)}},slot:"append"})],1)],1),_c('dictionary-diaglog',{ref:"dicPreview",attrs:{"visible":_vm.dicVisible,"width":"80%","append-to-body":""},on:{"on-close":function($event){_vm.dicVisible = false}}})]:_vm._e()],2)}
-var GenerateFormItemvue_type_template_id_19ed389c_staticRenderFns = []
+return _c('label',{},[_vm._v("\n                    "+_vm._s(node.label)+" "),(shouldShowCount)?_c('span',[_vm._v("("+_vm._s(count)+")")]):_vm._e()])}}]),model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})],1)]:_vm._e(),(_vm.widget.type == 'eltable')?[_c('div',{style:({'width': _vm.widget.options.width})},[_c('div',{staticStyle:{"width":"100%","padding-bottom":"10px"},attrs:{"align":"right"}},[_c('el-button',{attrs:{"type":"primary"},on:{"click":function($event){_vm.$refs.editable.insert({})}}},[_vm._v("新增")]),_c('el-button',{attrs:{"type":"danger"},on:{"click":function($event){_vm.$refs.editable.removeSelecteds()}}},[_vm._v("删除选中")]),_c('el-button',{attrs:{"type":"danger"},on:{"click":function($event){_vm.$refs.editable.clear()}}},[_vm._v("清空所有")]),_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.getAllTableData}},[_vm._v("保存")])],1),_c('el-editable',{ref:"editable",attrs:{"data":_vm.tableList},on:{"update:data":function($event){_vm.tableList=$event}}},[_c('el-editable-column',{attrs:{"type":"selection","width":"55"}}),_c('el-editable-column',{attrs:{"type":"index","width":"55"}}),_vm._l((_vm.widget.options.options),function(item,index){return _c('el-editable-column',{key:index,attrs:{"prop":item.value,"label":item.label,"editRender":{name: 'ElInput'}}})}),_c('el-editable-column',{attrs:{"label":"操作"},scopedSlots:_vm._u([{key:"default",fn:function(scope){return [_c('el-button',{attrs:{"size":"mini","type":"danger"},on:{"click":function($event){_vm.removeEvent(scope.row, scope.$index)}}},[_vm._v("删除\n                        ")])]}}])})],2)],1)]:_vm._e(),(_vm.widget.type == 'input')?[_c('div',[(_vm.widget.options.dataType == 'number' || _vm.widget.options.dataType == 'integer' || _vm.widget.options.dataType == 'float')?_c('el-input',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"type":_vm.widget.options.dataType,"id":_vm.widget.model,"placeholder":_vm.widget.options.placeholder,"readonly":_vm.widget.options.readonly},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=_vm._n($$v)},expression:"dataModel"}}):_c('el-input',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"type":_vm.widget.options.dataType,"id":_vm.widget.model,"placeholder":_vm.widget.options.placeholder,"readonly":_vm.widget.options.readonly},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})],1)]:_vm._e(),(_vm.widget.type == 'textarea')?[_c('el-input',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"type":"textarea","autosize":{minRows:2,maxRows:30},"id":_vm.widget.model,"placeholder":_vm.widget.options.placeholder,"readonly":_vm.widget.options.readonly},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type == 'tinymce')?[_c('div',[_c('tinymce-editor',{ref:_vm.widget.model,attrs:{"id":_vm.widget.model,"disabled":_vm.widget.options.disabled},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})],1)]:_vm._e(),(_vm.widget.type == 'number')?[_c('el-input-number',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"id":_vm.widget.model,"step":_vm.widget.options.step,"readonly":_vm.widget.options.readonly,"controls-position":"right"},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type == 'radio')?[_c('el-radio-group',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"id":_vm.widget.model,"disabled":_vm.widget.options.disabled},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}},_vm._l(((_vm.widget.options.remote ? _vm.widget.options.remoteOptions : _vm.widget.options.options)),function(item,index){return _c('el-radio',{key:index,style:({display: _vm.widget.options.inline ? 'inline-block' : 'block'}),attrs:{"label":item.value}},[(_vm.widget.options.remote)?[_vm._v(_vm._s(item.label))]:[_vm._v(_vm._s(_vm.widget.options.showLabel ? item.label : item.value))]],2)}),1)]:_vm._e(),(_vm.widget.type == 'checkbox')?[_c('el-checkbox-group',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"id":_vm.widget.model,"disabled":_vm.widget.options.disabled},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}},_vm._l(((_vm.widget.options.remote ? _vm.widget.options.remoteOptions : _vm.widget.options.options)),function(item,index){return _c('el-checkbox',{key:index,style:({display: _vm.widget.options.inline ? 'inline-block' : 'block'}),attrs:{"label":item.value}},[(_vm.widget.options.remote)?[_vm._v(_vm._s(item.label))]:[_vm._v(_vm._s(_vm.widget.options.showLabel ? item.label : item.value))]],2)}),1)]:_vm._e(),(_vm.widget.type == 'time')?[_c('el-time-picker',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"id":_vm.widget.model,"is-range":_vm.widget.options.isRange,"placeholder":_vm.widget.options.placeholder,"start-placeholder":_vm.widget.options.startPlaceholder,"end-placeholder":_vm.widget.options.endPlaceholder,"readonly":_vm.widget.options.readonly,"disabled":_vm.widget.options.disabled,"editable":_vm.widget.options.editable,"clearable":_vm.widget.options.clearable,"arrowControl":_vm.widget.options.arrowControl,"value-format":_vm.widget.options.format},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type=='date')?[_c('el-date-picker',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"id":_vm.widget.model,"type":_vm.widget.options.type,"placeholder":_vm.widget.options.placeholder,"start-placeholder":_vm.widget.options.startPlaceholder,"end-placeholder":_vm.widget.options.endPlaceholder,"readonly":_vm.widget.options.readonly,"disabled":_vm.widget.options.disabled,"editable":_vm.widget.options.editable,"clearable":_vm.widget.options.clearable,"value-format":_vm.widget.options.timestamp ? 'timestamp' : _vm.widget.options.format,"format":_vm.widget.options.format},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type =='rate')?[_c('el-rate',{ref:_vm.widget.model,attrs:{"id":_vm.widget.model,"max":_vm.widget.options.max,"disabled":_vm.widget.options.disabled,"allow-half":_vm.widget.options.allowHalf},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type == 'color')?[_c('el-color-picker',{ref:_vm.widget.model,attrs:{"id":_vm.widget.model,"disabled":_vm.widget.options.disabled,"show-alpha":_vm.widget.options.showAlpha},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type == 'select')?[_c('el-select',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"id":_vm.widget.model,"disabled":_vm.widget.options.disabled,"multiple":_vm.widget.options.multiple,"clearable":_vm.widget.options.clearable,"placeholder":_vm.widget.options.placeholder},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}},_vm._l(((_vm.widget.options.remote ? _vm.widget.options.remoteOptions : _vm.widget.options.options)),function(item){return _c('el-option',{key:item.value,attrs:{"value":item.value,"label":_vm.widget.options.showLabel || _vm.widget.options.remote?item.label:item.value}})}),1)]:_vm._e(),(_vm.widget.type=='switch')?[_c('el-switch',{ref:_vm.widget.model,attrs:{"id":_vm.widget.model,"disabled":_vm.widget.options.disabled},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type=='slider')?[_c('el-slider',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"id":_vm.widget.model,"min":_vm.widget.options.min,"max":_vm.widget.options.max,"disabled":_vm.widget.options.disabled,"step":_vm.widget.options.step,"show-input":_vm.widget.options.showInput,"range":_vm.widget.options.range},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type=='imgupload')?[_c('fm-upload',{ref:_vm.widget.model,style:({'width': _vm.widget.options.width}),attrs:{"id":_vm.widget.model,"disabled":_vm.widget.options.disabled,"width":_vm.widget.options.size.width,"height":_vm.widget.options.size.height},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}})]:_vm._e(),(_vm.widget.type == 'dictionary')?[_c('div',[_c('el-input',{ref:_vm.widget.model,style:({width: _vm.widget.options.width}),attrs:{"id":_vm.widget.model,"placeholder":_vm.widget.options.placeholder,"readonly":_vm.widget.options.readonly},model:{value:(_vm.dataModel),callback:function ($$v) {_vm.dataModel=$$v},expression:"dataModel"}},[_c('el-button',{attrs:{"slot":"append","icon":"el-icon-more"},on:{"click":function($event){_vm.handleOpenDicDialog(_vm.widget.options.props.id,_vm.widget.model)}},slot:"append"})],1)],1),_c('dictionary-diaglog',{ref:"dicPreview",attrs:{"visible":_vm.dicVisible,"width":"80%","append-to-body":""},on:{"on-close":function($event){_vm.dicVisible = false}}})]:_vm._e()],2)}
+var GenerateFormItemvue_type_template_id_547e009d_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/GenerateFormItem.vue?vue&type=template&id=19ed389c&
+// CONCATENATED MODULE: ./src/components/GenerateFormItem.vue?vue&type=template&id=547e009d&
 
-// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/UploadFiles.vue?vue&type=template&id=92fce208&
-var UploadFilesvue_type_template_id_92fce208_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"fm-uplaod-container",attrs:{"id":_vm.uploadId}},[_c('div',{staticClass:"el-upload "},[_c('el-button',{attrs:{"size":"mini","type":"default"}},[_vm._v("浏览...")]),_c('input',{ref:"uploadInput",staticClass:"el-upload__input upload-input",attrs:{"multiple":"","type":"file","name":"file"},on:{"change":_vm.handleChange}})],1),_vm._l((_vm.fileList),function(item){return _c('div',{key:item.key,attrs:{"id":item.key}},[(item.status=='uploading')?_c('el-progress',{attrs:{"stroke-width":18,"status":item.percent<100?'exception':'success',"type":"line","percentage":item.percent}}):_vm._e(),(item.status=='success')?_c('ul',[_c('li',[_c('i',{staticClass:"el-icon-delete",style:({'font-size': '18px'}),on:{"click":function($event){_vm.handleRemove(item.key)}}})]),_c('li',[_vm._v(_vm._s(item.key))])]):_vm._e()],1)})],2)}
-var UploadFilesvue_type_template_id_92fce208_staticRenderFns = []
+// EXTERNAL MODULE: ./node_modules/_regenerator-runtime@0.12.1@regenerator-runtime/runtime.js
+var runtime = __webpack_require__("b5aa");
+
+// CONCATENATED MODULE: ./node_modules/_@babel_runtime-corejs2@7.2.0@@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js
 
 
-// CONCATENATED MODULE: ./src/components/UploadFiles.vue?vue&type=template&id=92fce208&
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+  try {
+    var info = gen[key](arg);
+    var value = info.value;
+  } catch (error) {
+    reject(error);
+    return;
+  }
+
+  if (info.done) {
+    resolve(value);
+  } else {
+    promise_default.a.resolve(value).then(_next, _throw);
+  }
+}
+
+function _asyncToGenerator(fn) {
+  return function () {
+    var self = this,
+        args = arguments;
+    return new promise_default.a(function (resolve, reject) {
+      var gen = fn.apply(self, args);
+
+      function _next(value) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+      }
+
+      function _throw(err) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+      }
+
+      _next(undefined);
+    });
+  };
+}
+// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/UploadFiles.vue?vue&type=template&id=9ae6fe6a&
+var UploadFilesvue_type_template_id_9ae6fe6a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"uploadId",staticClass:"fm-uplaod-container",attrs:{"id":_vm.uploadId}},[_c('div',{staticClass:"el-upload "},[_c('el-button',{attrs:{"size":"mini","type":"default"}},[_vm._v("浏览...")]),_c('input',{ref:"uploadInput",staticClass:"el-upload__input upload-input",attrs:{"multiple":"","type":"file","name":"file"},on:{"change":_vm.handleChange}})],1),_vm._l((_vm.fileList),function(item){return _c('div',{key:item.key,attrs:{"id":item.key}},[(item.status=='uploading')?_c('el-progress',{attrs:{"stroke-width":18,"status":item.percent<100?'exception':'success',"type":"line","percentage":item.percent}}):_vm._e(),(item.status=='success')?_c('ul',[_c('li',[_c('i',{staticClass:"el-icon-delete",style:({'font-size': '18px'}),on:{"click":function($event){_vm.handleRemove(item.key)}}})]),_c('li',[_vm._v(_vm._s(item.key))])]):_vm._e()],1)})],2)}
+var UploadFilesvue_type_template_id_9ae6fe6a_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/UploadFiles.vue?vue&type=template&id=9ae6fe6a&
 
 // EXTERNAL MODULE: ./node_modules/_core-js@2.6.1@core-js/modules/es6.array.find-index.js
 var es6_array_find_index = __webpack_require__("d49d");
@@ -3986,6 +4021,7 @@ var es6_array_find_index = __webpack_require__("d49d");
 
 
 
+//
 //
 //
 //
@@ -4284,8 +4320,8 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   components_UploadFilesvue_type_script_lang_js_,
-  UploadFilesvue_type_template_id_92fce208_render,
-  UploadFilesvue_type_template_id_92fce208_staticRenderFns,
+  UploadFilesvue_type_template_id_9ae6fe6a_render,
+  UploadFilesvue_type_template_id_9ae6fe6a_staticRenderFns,
   false,
   null,
   null,
@@ -4300,11 +4336,9 @@ var _axios_0_18_0_axios = __webpack_require__("7f43");
 var _axios_0_18_0_axios_default = /*#__PURE__*/__webpack_require__.n(_axios_0_18_0_axios);
 
 // CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@1.2.0@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.0.5@babel-loader/lib!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/Common.vue?vue&type=script&lang=js&
-
-
-
 // 定义一些公共的属性和方法
-var httpUrl = 'http://192.168.101.137:8090/api'; //const httpUrl = 'http://127.0.0.1:8090/api'
+var httpUrl = 'http://192.168.101.137:8090/api';
+var isMobile = false; //const httpUrl = 'http://127.0.0.1:8090/api'
 
 function commonFun() {
   console.log("公共方法");
@@ -4313,6 +4347,7 @@ function commonFun() {
 
 /* harmony default export */ var Commonvue_type_script_lang_js_ = ({
   httpUrl: httpUrl,
+  isMobile: isMobile,
   commonFun: commonFun
 });
 // CONCATENATED MODULE: ./src/Common.vue?vue&type=script&lang=js&
@@ -4372,12 +4407,12 @@ request.interceptors.response.use(function (response) {
 var vue_treeselect = __webpack_require__("e53c");
 var vue_treeselect_default = /*#__PURE__*/__webpack_require__.n(vue_treeselect);
 
-// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/TinymceEditor.vue?vue&type=template&id=120acc5e&scoped=true&
-var TinymceEditorvue_type_template_id_120acc5e_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tinymce-container"},[_c('editor',{attrs:{"init":_vm.init,"disabled":_vm.disabled},model:{value:(_vm.myValue),callback:function ($$v) {_vm.myValue=$$v},expression:"myValue"}})],1)}
-var TinymceEditorvue_type_template_id_120acc5e_scoped_true_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/TinymceEditor.vue?vue&type=template&id=204b8644&scoped=true&
+var TinymceEditorvue_type_template_id_204b8644_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tinymce-container"},[_c('editor',{attrs:{"init":_vm.init,"disabled":_vm.disabled},model:{value:(_vm.myValue),callback:function ($$v) {_vm.myValue=$$v},expression:"myValue"}})],1)}
+var TinymceEditorvue_type_template_id_204b8644_scoped_true_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/TinymceEditor.vue?vue&type=template&id=120acc5e&scoped=true&
+// CONCATENATED MODULE: ./src/components/TinymceEditor.vue?vue&type=template&id=204b8644&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/_tinymce@4.9.2@tinymce/tinymce.js
 var tinymce = __webpack_require__("b022");
@@ -4780,8 +4815,8 @@ var code = __webpack_require__("1e3f");
 });
 // CONCATENATED MODULE: ./src/components/TinymceEditor.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_TinymceEditorvue_type_script_lang_js_ = (TinymceEditorvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/TinymceEditor.vue?vue&type=style&index=0&id=120acc5e&scoped=true&lang=css&
-var TinymceEditorvue_type_style_index_0_id_120acc5e_scoped_true_lang_css_ = __webpack_require__("8b70");
+// EXTERNAL MODULE: ./src/components/TinymceEditor.vue?vue&type=style&index=0&id=204b8644&scoped=true&lang=css&
+var TinymceEditorvue_type_style_index_0_id_204b8644_scoped_true_lang_css_ = __webpack_require__("1eaa");
 
 // CONCATENATED MODULE: ./src/components/TinymceEditor.vue
 
@@ -4794,11 +4829,11 @@ var TinymceEditorvue_type_style_index_0_id_120acc5e_scoped_true_lang_css_ = __we
 
 var TinymceEditor_component = normalizeComponent(
   components_TinymceEditorvue_type_script_lang_js_,
-  TinymceEditorvue_type_template_id_120acc5e_scoped_true_render,
-  TinymceEditorvue_type_template_id_120acc5e_scoped_true_staticRenderFns,
+  TinymceEditorvue_type_template_id_204b8644_scoped_true_render,
+  TinymceEditorvue_type_template_id_204b8644_scoped_true_staticRenderFns,
   false,
   null,
-  "120acc5e",
+  "204b8644",
   null
   
 )
@@ -6454,12 +6489,12 @@ var Editable_component = normalizeComponent(
 
 Editable_component.options.__file = "Editable.vue"
 /* harmony default export */ var Editable = (Editable_component.exports);
-// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/EditableColumn.vue?vue&type=template&id=20866246&
-var EditableColumnvue_type_template_id_20866246_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.type === 'selection' || _vm.group)?_c('el-table-column',_vm._b({staticClass:"el-checkbox"},'el-table-column',_vm.attrs,false),[_vm._t("default")],2):(_vm.type === 'index')?_c('el-table-column',_vm._b({scopedSlots:_vm._u([{key:"header",fn:function(scope){return [_vm._t("head",[_vm._v("#")],null,{$index: scope.$index, column: scope.column, store: scope.store})]}}])},'el-table-column',_vm.attrs,false),[_vm._t("default")],2):(_vm.type === 'expand')?_c('el-table-column',_vm._b({scopedSlots:_vm._u([{key:"header",fn:function(scope){return [_vm._t("head",null,null,{$index: scope.$index, column: scope.column, store: scope.store})]}},{key:"default",fn:function(scope){return [_vm._t("default",null,null,{$index: scope.$index, row: scope.row.data, column: scope.column, store: scope.store, _row: scope.row})]}}])},'el-table-column',_vm.attrs,false)):(_vm.editRender)?_c('el-table-column',_vm._b({scopedSlots:_vm._u([{key:"header",fn:function(scope){return [_vm._t("head",[_c('i',{staticClass:"el-icon-edit-outline editable-header-icon"}),_vm._v(_vm._s(scope.column.label)+"\n    ")],null,{$index: scope.$index, column: scope.column, store: scope.store})]}},{key:"default",fn:function(scope){return [(_vm.editRender.type === 'visible')?[_vm._t("edit",[(_vm.editRender.name === 'ElSelect')?[_c('el-select',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-select',_vm.getRendAttrs(scope),false),_vm._l((_vm.editRender.options),function(item,index){return _c('el-option',_vm._b({key:index,attrs:{"value":item.value,"label":item.label}},'el-option',_vm.editRender.optionAttrs,false))}),1)]:(_vm.editRender.name === 'ElCascader')?[_c('el-cascader',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-cascader',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElTimePicker')?[_c('el-time-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-time-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElDatePicker')?[_c('el-date-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-date-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElInputNumber')?[_c('el-input-number',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-input-number',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElSwitch')?[_c('el-switch',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-switch',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElRate')?[_c('el-rate',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-rate',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElColorPicker')?[_c('el-color-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-color-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElSlider')?[_c('el-slider',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-slider',_vm.getRendAttrs(scope),false))]:[_c('el-input',{on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}})]],null,{$index: scope.$index, row: scope.row.data, column: scope.column, store: scope.store, _row: scope.row})]:[(scope.row.editable.mode === 'row' ? scope.row.editActive : scope.row.editActive === scope.column.property)?[_vm._t("edit",[(_vm.editRender.name === 'ElSelect')?[_c('el-select',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-select',_vm.getRendAttrs(scope),false),_vm._l((_vm.editRender.options),function(item,index){return _c('el-option',_vm._b({key:index,attrs:{"value":item.value,"label":item.label}},'el-option',_vm.editRender.optionAttrs,false))}),1)]:(_vm.editRender.name === 'ElCascader')?[_c('el-cascader',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-cascader',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElTimePicker')?[_c('el-time-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-time-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElDatePicker')?[_c('el-date-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-date-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElInputNumber')?[_c('el-input-number',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-input-number',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElSwitch')?[_c('el-switch',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-switch',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElRate')?[_c('el-rate',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-rate',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElColorPicker')?[_c('el-color-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-color-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElSlider')?[_c('el-slider',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-slider',_vm.getRendAttrs(scope),false))]:[_c('el-input',{on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}})]],null,{$index: scope.$index, row: scope.row.data, column: scope.column, store: scope.store, _row: scope.row})]:[_vm._t("default",[(_vm.editRender.name === 'ElSelect')?[_vm._v(_vm._s(_vm.getSelectLabel(scope)))]:(_vm.editRender.name === 'ElCascader')?[_vm._v(_vm._s(_vm.getCascaderLabel(scope)))]:(_vm.editRender.name === 'ElTimePicker')?[_vm._v(_vm._s(_vm.getTimePickerLabel(scope)))]:(_vm.editRender.name === 'ElDatePicker')?[_vm._v(_vm._s(_vm.getDatePickerLabel(scope)))]:[_vm._v(_vm._s(_vm.formatter ? _vm.formatter(scope.row.data, scope.column, scope.row.data[scope.column.property], scope.$index) : scope.row.data[scope.column.property]))]],null,{$index: scope.$index, row: scope.row.data, column: scope.column, store: scope.store, _row: scope.row})]]]}}])},'el-table-column',_vm.attrs,false)):_c('el-table-column',_vm._b({scopedSlots:_vm._u([{key:"default",fn:function(scope){return [_vm._t("default",[_vm._v(_vm._s(_vm.formatter ? _vm.formatter(scope.row.data, scope.column, scope.row.data[scope.column.property], scope.$index) : scope.row.data[scope.column.property]))],null,{$index: scope.$index, row: scope.row.data, column: scope.column, store: scope.store, _row: scope.row})]}}])},'el-table-column',_vm.attrs,false))}
-var EditableColumnvue_type_template_id_20866246_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/EditableColumn.vue?vue&type=template&id=34d69fdd&
+var EditableColumnvue_type_template_id_34d69fdd_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.type === 'selection' || _vm.group)?_c('el-table-column',_vm._b({staticClass:"el-checkbox"},'el-table-column',_vm.attrs,false),[_vm._t("default")],2):(_vm.type === 'index')?_c('el-table-column',_vm._b({scopedSlots:_vm._u([{key:"header",fn:function(scope){return [_vm._t("head",[_vm._v("#")],null,{$index: scope.$index, column: scope.column, store: scope.store})]}}])},'el-table-column',_vm.attrs,false),[_vm._t("default")],2):(_vm.type === 'expand')?_c('el-table-column',_vm._b({scopedSlots:_vm._u([{key:"header",fn:function(scope){return [_vm._t("head",null,null,{$index: scope.$index, column: scope.column, store: scope.store})]}},{key:"default",fn:function(scope){return [_vm._t("default",null,null,{$index: scope.$index, row: scope.row.data, column: scope.column, store: scope.store, _row: scope.row})]}}])},'el-table-column',_vm.attrs,false)):(_vm.editRender)?_c('el-table-column',_vm._b({scopedSlots:_vm._u([{key:"header",fn:function(scope){return [_vm._t("head",[_c('i',{staticClass:"el-icon-edit-outline editable-header-icon"}),_vm._v(_vm._s(scope.column.label)+"\n    ")],null,{$index: scope.$index, column: scope.column, store: scope.store})]}},{key:"default",fn:function(scope){return [(_vm.editRender.type === 'visible')?[_vm._t("edit",[(_vm.editRender.name === 'ElSelect')?[_c('el-select',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-select',_vm.getRendAttrs(scope),false),_vm._l((_vm.editRender.options),function(item,index){return _c('el-option',_vm._b({key:index,attrs:{"value":item.value,"label":item.label}},'el-option',_vm.editRender.optionAttrs,false))}),1)]:(_vm.editRender.name === 'ElCascader')?[_c('el-cascader',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-cascader',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElTimePicker')?[_c('el-time-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-time-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElDatePicker')?[_c('el-date-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-date-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElInputNumber')?[_c('el-input-number',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-input-number',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElSwitch')?[_c('el-switch',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-switch',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElRate')?[_c('el-rate',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-rate',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElColorPicker')?[_c('el-color-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-color-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElSlider')?[_c('el-slider',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-slider',_vm.getRendAttrs(scope),false))]:[_c('el-input',{on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}})]],null,{$index: scope.$index, row: scope.row.data, column: scope.column, store: scope.store, _row: scope.row})]:[(scope.row.editable.mode === 'row' ? scope.row.editActive : scope.row.editActive === scope.column.property)?[_vm._t("edit",[(_vm.editRender.name === 'ElSelect')?[_c('el-select',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-select',_vm.getRendAttrs(scope),false),_vm._l((_vm.editRender.options),function(item,index){return _c('el-option',_vm._b({key:index,attrs:{"value":item.value,"label":item.label}},'el-option',_vm.editRender.optionAttrs,false))}),1)]:(_vm.editRender.name === 'ElCascader')?[_c('el-cascader',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-cascader',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElTimePicker')?[_c('el-time-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-time-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElDatePicker')?[_c('el-date-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-date-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElInputNumber')?[_c('el-input-number',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-input-number',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElSwitch')?[_c('el-switch',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-switch',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElRate')?[_c('el-rate',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-rate',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElColorPicker')?[_c('el-color-picker',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-color-picker',_vm.getRendAttrs(scope),false))]:(_vm.editRender.name === 'ElSlider')?[_c('el-slider',_vm._b({on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}},'el-slider',_vm.getRendAttrs(scope),false))]:[_c('el-input',{on:{"change":function($event){_vm.changeEvent(scope)}},model:{value:(scope.row.data[scope.column.property]),callback:function ($$v) {_vm.$set(scope.row.data, scope.column.property, $$v)},expression:"scope.row.data[scope.column.property]"}})]],null,{$index: scope.$index, row: scope.row.data, column: scope.column, store: scope.store, _row: scope.row})]:[_vm._t("default",[(_vm.editRender.name === 'ElSelect')?[_vm._v(_vm._s(_vm.getSelectLabel(scope)))]:(_vm.editRender.name === 'ElCascader')?[_vm._v(_vm._s(_vm.getCascaderLabel(scope)))]:(_vm.editRender.name === 'ElTimePicker')?[_vm._v(_vm._s(_vm.getTimePickerLabel(scope)))]:(_vm.editRender.name === 'ElDatePicker')?[_vm._v(_vm._s(_vm.getDatePickerLabel(scope)))]:[_vm._v(_vm._s(_vm.formatter ? _vm.formatter(scope.row.data, scope.column, scope.row.data[scope.column.property], scope.$index) : scope.row.data[scope.column.property]))]],null,{$index: scope.$index, row: scope.row.data, column: scope.column, store: scope.store, _row: scope.row})]]]}}])},'el-table-column',_vm.attrs,false)):_c('el-table-column',_vm._b({scopedSlots:_vm._u([{key:"default",fn:function(scope){return [_vm._t("default",[_vm._v(_vm._s(_vm.formatter ? _vm.formatter(scope.row.data, scope.column, scope.row.data[scope.column.property], scope.$index) : scope.row.data[scope.column.property]))],null,{$index: scope.$index, row: scope.row.data, column: scope.column, store: scope.store, _row: scope.row})]}}])},'el-table-column',_vm.attrs,false))}
+var EditableColumnvue_type_template_id_34d69fdd_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/EditableColumn.vue?vue&type=template&id=20866246&
+// CONCATENATED MODULE: ./src/components/EditableColumn.vue?vue&type=template&id=34d69fdd&
 
 // EXTERNAL MODULE: ./node_modules/_core-js@2.6.1@core-js/modules/es6.string.fixed.js
 var es6_string_fixed = __webpack_require__("5f5b");
@@ -6787,8 +6822,8 @@ var EditableColumnvue_type_style_index_0_lang_scss_ = __webpack_require__("92a2"
 
 var EditableColumn_component = normalizeComponent(
   components_EditableColumnvue_type_script_lang_js_,
-  EditableColumnvue_type_template_id_20866246_render,
-  EditableColumnvue_type_template_id_20866246_staticRenderFns,
+  EditableColumnvue_type_template_id_34d69fdd_render,
+  EditableColumnvue_type_template_id_34d69fdd_staticRenderFns,
   false,
   null,
   null,
@@ -6798,15 +6833,14 @@ var EditableColumn_component = normalizeComponent(
 
 EditableColumn_component.options.__file = "EditableColumn.vue"
 /* harmony default export */ var EditableColumn = (EditableColumn_component.exports);
-// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/DictionaryDialog.vue?vue&type=template&id=508b696a&
-var DictionaryDialogvue_type_template_id_508b696a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-dialog',{ref:"dicDialog",attrs:{"title":_vm.title,"visible":_vm.dicVisible,"close-on-click-modal":false,"center":"","width":_vm.width,"id":_vm.id,"append-to-body":true},on:{"update:visible":function($event){_vm.dicVisible=$event}}},[_c('el-input',{attrs:{"placeholder":"输入关键字进行过滤"},model:{value:(_vm.filterText),callback:function ($$v) {_vm.filterText=$$v},expression:"filterText"}}),_c('el-tree',{ref:"dicTree",staticClass:"filter-tree",attrs:{"data":_vm.dicTreeData,"props":_vm.defaultProps,"show-checkbox":"","default-expand-all":"","filter-node-method":_vm.filterNode}}),(_vm.action)?_c('span',{directives:[{name:"loading",rawName:"v-loading",value:(_vm.loading),expression:"loading"}],staticClass:"dialog-footer",attrs:{"slot":"footer","element-loading-text":_vm.loadingText},slot:"footer"},[_vm._t("action",[_c('el-button',{on:{"click":_vm.close}},[_vm._v("取消")]),_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.handleSelectTreeData}},[_vm._v("确 定")])])],2):_vm._e()],1)}
-var DictionaryDialogvue_type_template_id_508b696a_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"42fc28b8-vue-loader-template"}!./node_modules/_vue-loader@15.5.0@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/DictionaryDialog.vue?vue&type=template&id=15059166&
+var DictionaryDialogvue_type_template_id_15059166_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('el-dialog',{ref:"dicDialog",attrs:{"title":_vm.title,"visible":_vm.dicVisible,"close-on-click-modal":false,"center":"","width":_vm.width,"append-to-body":true},on:{"update:visible":function($event){_vm.dicVisible=$event}}},[_c('el-input',{attrs:{"placeholder":"输入关键字进行过滤"},model:{value:(_vm.filterText),callback:function ($$v) {_vm.filterText=$$v},expression:"filterText"}}),_c('el-tree',{ref:"dicTree",staticClass:"filter-tree",attrs:{"data":_vm.dicTreeData,"props":_vm.defaultProps,"show-checkbox":"","default-expand-all":"","filter-node-method":_vm.filterNode}}),(_vm.action)?_c('span',{directives:[{name:"loading",rawName:"v-loading",value:(_vm.loading),expression:"loading"}],staticClass:"dialog-footer",attrs:{"slot":"footer","element-loading-text":_vm.loadingText},slot:"footer"},[_vm._t("action",[_c('el-button',{on:{"click":_vm.close}},[_vm._v("取消")]),_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.handleSelectTreeData}},[_vm._v("确 定")])])],2):_vm._e()],1)}
+var DictionaryDialogvue_type_template_id_15059166_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/DictionaryDialog.vue?vue&type=template&id=508b696a&
+// CONCATENATED MODULE: ./src/components/DictionaryDialog.vue?vue&type=template&id=15059166&
 
 // CONCATENATED MODULE: ./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_thread-loader@1.2.0@thread-loader/dist/cjs.js!./node_modules/_babel-loader@8.0.5@babel-loader/lib!./node_modules/_cache-loader@1.2.5@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.5.0@vue-loader/lib??vue-loader-options!./src/components/DictionaryDialog.vue?vue&type=script&lang=js&
-//
 //
 //
 //
@@ -6990,8 +7024,8 @@ var DictionaryDialogvue_type_style_index_0_lang_scss_ = __webpack_require__("95f
 
 var DictionaryDialog_component = normalizeComponent(
   components_DictionaryDialogvue_type_script_lang_js_,
-  DictionaryDialogvue_type_template_id_508b696a_render,
-  DictionaryDialogvue_type_template_id_508b696a_staticRenderFns,
+  DictionaryDialogvue_type_template_id_15059166_render,
+  DictionaryDialogvue_type_template_id_15059166_staticRenderFns,
   false,
   null,
   null,
@@ -7007,7 +7041,52 @@ DictionaryDialog_component.options.__file = "DictionaryDialog.vue"
 
 
 
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7364,26 +7443,28 @@ DictionaryDialog_component.options.__file = "DictionaryDialog.vue"
       dicVisible: false,
       tableList: [],
       dataModel: this.models[this.widget.model],
+      orgOptions: null,
+      orgUserOptions: null,
       content: '' // 富文本编辑器双向绑定的内容
 
     };
   },
   inject: ['getData'],
   created: function created() {
-    var _this = this;
+    var _this2 = this;
 
     if (this.widget.options.remote && this.remote[this.widget.options.remoteFunc]) {
       this.remote[this.widget.options.remoteFunc](function (data) {
-        if (_this.widget.widgetType == '2') {
-          _this.widget.options.remoteOptions = data.map(function (item) {
+        if (_this2.widget.widgetType == '2') {
+          _this2.widget.options.remoteOptions = data.map(function (item) {
             return {
-              id: item[_this.widget.options.props.id],
-              value: item[_this.widget.options.props.value],
-              label: item[_this.widget.options.props.label]
+              id: item[_this2.widget.options.props.id],
+              value: item[_this2.widget.options.props.value],
+              label: item[_this2.widget.options.props.label]
             };
           });
         } else {
-          _this.widget.options.remoteOptions = data;
+          _this2.widget.options.remoteOptions = data;
         }
       });
     }
@@ -7404,6 +7485,86 @@ DictionaryDialog_component.options.__file = "DictionaryDialog.vue"
     });
   },
   methods: {
+    handleOrgRemoteFunc: function () {
+      var _handleOrgRemoteFunc = _asyncToGenerator(
+      /*#__PURE__*/
+      regeneratorRuntime.mark(function _callee(_ref) {
+        var action, _this;
+
+        return regeneratorRuntime.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                action = _ref.action;
+                _this = this;
+                _context.next = 4;
+                return util_request({
+                  method: 'get',
+                  url: '/formdata/getOrgList/0'
+                }).then(function (response) {
+                  if (response.flag == 200) {
+                    // 获取到远端数据后执行回调函数
+                    _this.orgOptions = response.data;
+                  } //  console.log(response);
+
+                }).catch(function (err) {
+                  console.log(err);
+                });
+
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function handleOrgRemoteFunc(_x) {
+        return _handleOrgRemoteFunc.apply(this, arguments);
+      }
+
+      return handleOrgRemoteFunc;
+    }(),
+    handleUserRemoteFunc: function () {
+      var _handleUserRemoteFunc = _asyncToGenerator(
+      /*#__PURE__*/
+      regeneratorRuntime.mark(function _callee2(_ref2) {
+        var action, _this;
+
+        return regeneratorRuntime.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                action = _ref2.action;
+                _this = this;
+                _context2.next = 4;
+                return util_request({
+                  method: 'get',
+                  url: '/formdata/getOrgUserList/0'
+                }).then(function (response) {
+                  if (response.flag == 200) {
+                    // 获取到远端数据后执行回调函数
+                    _this.orgUserOptions = response.data;
+                  } //  console.log(response);
+
+                }).catch(function (err) {
+                  console.log(err);
+                });
+
+              case 4:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function handleUserRemoteFunc(_x2) {
+        return _handleUserRemoteFunc.apply(this, arguments);
+      }
+
+      return handleUserRemoteFunc;
+    }(),
     handleOpenDicDialog: function handleOpenDicDialog(id, key) {
       // alert(key)
       this.$refs.dicPreview.getTreeData(id, key);
@@ -7415,14 +7576,14 @@ DictionaryDialog_component.options.__file = "DictionaryDialog.vue"
       //  console.log(this.models)
     },
     removeEvent: function removeEvent(row, index) {
-      var _this2 = this;
+      var _this3 = this;
 
       element_ui_common["MessageBox"].confirm('确定删除该数据?', '温馨提示', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
       }).then(function () {
-        _this2.$refs.editable.removeRow(index);
+        _this3.$refs.editable.removeRow(index);
       }).catch(function (e) {
         return e;
       });
@@ -7471,6 +7632,14 @@ DictionaryDialog_component.options.__file = "DictionaryDialog.vue"
     handleSubmitBtn: function handleSubmitBtn() {
       this.handleSaveBtn();
     },
+    handleCloseBtn: function handleCloseBtn() {
+      //  console.log("root==>",)
+      //  console.log("$parent==>",this.$parent.$parent.$parent)
+      this.$root.$children[0].$children[0].$children[0].$refs.widgetPreview.close();
+    },
+    handleBackBtn: function handleBackBtn() {
+      history.go(-1);
+    },
     handlePassBtn: function handlePassBtn() {
       alert('努力开发中,敬请期待...');
     },
@@ -7507,8 +7676,8 @@ DictionaryDialog_component.options.__file = "DictionaryDialog.vue"
 
 var GenerateFormItem_component = normalizeComponent(
   components_GenerateFormItemvue_type_script_lang_js_,
-  GenerateFormItemvue_type_template_id_19ed389c_render,
-  GenerateFormItemvue_type_template_id_19ed389c_staticRenderFns,
+  GenerateFormItemvue_type_template_id_547e009d_render,
+  GenerateFormItemvue_type_template_id_547e009d_staticRenderFns,
   false,
   null,
   null,
@@ -7525,50 +7694,47 @@ GenerateFormItem_component.options.__file = "GenerateFormItem.vue"
 
 
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* import "@/assets/css/element-display.css";*/
 
 /* harmony default export */ var GenerateFormvue_type_script_lang_js_ = ({
   name: 'fm-generate-form',
@@ -7578,8 +7744,11 @@ GenerateFormItem_component.options.__file = "GenerateFormItem.vue"
   props: ['data', 'remote', 'value'],
   data: function data() {
     return {
+      data: this.$refs.genetateFormItem.$data,
+      data1: this.$refs.genetateFormItem1.$data,
       models: {},
-      rules: {}
+      rules: {},
+      isMobile: this.GLOBAL.isMobile
     };
   },
   created: function created() {
@@ -7671,7 +7840,6 @@ var GenerateForm_component = normalizeComponent(
 GenerateForm_component.options.__file = "GenerateForm.vue"
 /* harmony default export */ var GenerateForm = (GenerateForm_component.exports);
 // CONCATENATED MODULE: ./src/indexBundle.js
-
 
 
 
@@ -10712,97 +10880,6 @@ module.exports = constant;
 
 /***/ }),
 
-/***/ "31dd":
-/***/ (function(module, exports, __webpack_require__) {
-
-var ctx = __webpack_require__("6333");
-var invoke = __webpack_require__("d1e4");
-var html = __webpack_require__("85af");
-var cel = __webpack_require__("cd9d");
-var global = __webpack_require__("c8da");
-var process = global.process;
-var setTask = global.setImmediate;
-var clearTask = global.clearImmediate;
-var MessageChannel = global.MessageChannel;
-var Dispatch = global.Dispatch;
-var counter = 0;
-var queue = {};
-var ONREADYSTATECHANGE = 'onreadystatechange';
-var defer, channel, port;
-var run = function () {
-  var id = +this;
-  // eslint-disable-next-line no-prototype-builtins
-  if (queue.hasOwnProperty(id)) {
-    var fn = queue[id];
-    delete queue[id];
-    fn();
-  }
-};
-var listener = function (event) {
-  run.call(event.data);
-};
-// Node.js 0.9+ & IE10+ has setImmediate, otherwise:
-if (!setTask || !clearTask) {
-  setTask = function setImmediate(fn) {
-    var args = [];
-    var i = 1;
-    while (arguments.length > i) args.push(arguments[i++]);
-    queue[++counter] = function () {
-      // eslint-disable-next-line no-new-func
-      invoke(typeof fn == 'function' ? fn : Function(fn), args);
-    };
-    defer(counter);
-    return counter;
-  };
-  clearTask = function clearImmediate(id) {
-    delete queue[id];
-  };
-  // Node.js 0.8-
-  if (__webpack_require__("f498")(process) == 'process') {
-    defer = function (id) {
-      process.nextTick(ctx(run, id, 1));
-    };
-  // Sphere (JS game engine) Dispatch API
-  } else if (Dispatch && Dispatch.now) {
-    defer = function (id) {
-      Dispatch.now(ctx(run, id, 1));
-    };
-  // Browsers with MessageChannel, includes WebWorkers
-  } else if (MessageChannel) {
-    channel = new MessageChannel();
-    port = channel.port2;
-    channel.port1.onmessage = listener;
-    defer = ctx(port.postMessage, port, 1);
-  // Browsers with postMessage, skip WebWorkers
-  // IE8 has postMessage, but it's sync & typeof its postMessage is 'object'
-  } else if (global.addEventListener && typeof postMessage == 'function' && !global.importScripts) {
-    defer = function (id) {
-      global.postMessage(id + '', '*');
-    };
-    global.addEventListener('message', listener, false);
-  // IE8-
-  } else if (ONREADYSTATECHANGE in cel('script')) {
-    defer = function (id) {
-      html.appendChild(cel('script'))[ONREADYSTATECHANGE] = function () {
-        html.removeChild(this);
-        run.call(id);
-      };
-    };
-  // Rest old browsers
-  } else {
-    defer = function (id) {
-      setTimeout(ctx(run, id, 1), 0);
-    };
-  }
-}
-module.exports = {
-  set: setTask,
-  clear: clearTask
-};
-
-
-/***/ }),
-
 /***/ "31e8":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12311,25 +12388,6 @@ $export($export.S + $export.F * !__webpack_require__("445c")(function (iter) { A
     return result;
   }
 });
-
-
-/***/ }),
-
-/***/ "41f2":
-/***/ (function(module, exports, __webpack_require__) {
-
-// call something on iterator step with safe closing on error
-var anObject = __webpack_require__("2724");
-module.exports = function (iterator, fn, value, entries) {
-  try {
-    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
-  // 7.4.6 IteratorClose(iterator, completion)
-  } catch (e) {
-    var ret = iterator['return'];
-    if (ret !== undefined) anObject(ret.call(iterator));
-    throw e;
-  }
-};
 
 
 /***/ }),
@@ -46613,18 +46671,6 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 
-/***/ "45e1":
-/***/ (function(module, exports) {
-
-module.exports = function (it, Constructor, name, forbiddenField) {
-  if (!(it instanceof Constructor) || (forbiddenField !== undefined && forbiddenField in it)) {
-    throw TypeError(name + ': incorrect invocation!');
-  } return it;
-};
-
-
-/***/ }),
-
 /***/ "48e1":
 /***/ (function(module, exports) {
 
@@ -57603,40 +57649,6 @@ __webpack_require__("bf89")('includes');
 
 /***/ }),
 
-/***/ "56eb":
-/***/ (function(module, exports, __webpack_require__) {
-
-var classof = __webpack_require__("0c62");
-var ITERATOR = __webpack_require__("20a7")('iterator');
-var Iterators = __webpack_require__("c3d9");
-module.exports = __webpack_require__("f048").getIteratorMethod = function (it) {
-  if (it != undefined) return it[ITERATOR]
-    || it['@@iterator']
-    || Iterators[classof(it)];
-};
-
-
-/***/ }),
-
-/***/ "5756":
-/***/ (function(module, exports, __webpack_require__) {
-
-var anObject = __webpack_require__("2724");
-var isObject = __webpack_require__("27e0");
-var newPromiseCapability = __webpack_require__("fe6a");
-
-module.exports = function (C, x) {
-  anObject(C);
-  if (isObject(x) && x.constructor === C) return x;
-  var promiseCapability = newPromiseCapability.f(C);
-  var resolve = promiseCapability.resolve;
-  resolve(x);
-  return promiseCapability.promise;
-};
-
-
-/***/ }),
-
 /***/ "57c1":
 /***/ (function(module, exports) {
 
@@ -58868,20 +58880,6 @@ module.exports = __webpack_require__("f388") ? Object.defineProperties : functio
 
 /***/ }),
 
-/***/ "6650":
-/***/ (function(module, exports) {
-
-module.exports = function (exec) {
-  try {
-    return { e: false, v: exec() };
-  } catch (e) {
-    return { e: true, v: e };
-  }
-};
-
-
-/***/ }),
-
 /***/ "66d1":
 /***/ (function(module, exports) {
 
@@ -59071,17 +59069,6 @@ module.exports = function (O, D) {
 
 /***/ }),
 
-/***/ "69a7":
-/***/ (function(module, exports, __webpack_require__) {
-
-var global = __webpack_require__("c8da");
-var navigator = global.navigator;
-
-module.exports = navigator && navigator.userAgent || '';
-
-
-/***/ }),
-
 /***/ "6bc3":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -59172,82 +59159,6 @@ module.exports = function (bitmap, value) {
     configurable: !(bitmap & 2),
     writable: !(bitmap & 4),
     value: value
-  };
-};
-
-
-/***/ }),
-
-/***/ "6eb9":
-/***/ (function(module, exports, __webpack_require__) {
-
-var global = __webpack_require__("c8da");
-var macrotask = __webpack_require__("31dd").set;
-var Observer = global.MutationObserver || global.WebKitMutationObserver;
-var process = global.process;
-var Promise = global.Promise;
-var isNode = __webpack_require__("f498")(process) == 'process';
-
-module.exports = function () {
-  var head, last, notify;
-
-  var flush = function () {
-    var parent, fn;
-    if (isNode && (parent = process.domain)) parent.exit();
-    while (head) {
-      fn = head.fn;
-      head = head.next;
-      try {
-        fn();
-      } catch (e) {
-        if (head) notify();
-        else last = undefined;
-        throw e;
-      }
-    } last = undefined;
-    if (parent) parent.enter();
-  };
-
-  // Node.js
-  if (isNode) {
-    notify = function () {
-      process.nextTick(flush);
-    };
-  // browsers with MutationObserver, except iOS Safari - https://github.com/zloirock/core-js/issues/339
-  } else if (Observer && !(global.navigator && global.navigator.standalone)) {
-    var toggle = true;
-    var node = document.createTextNode('');
-    new Observer(flush).observe(node, { characterData: true }); // eslint-disable-line no-new
-    notify = function () {
-      node.data = toggle = !toggle;
-    };
-  // environments with maybe non-completely correct, but existent Promise
-  } else if (Promise && Promise.resolve) {
-    // Promise.resolve without an argument throws an error in LG WebOS 2
-    var promise = Promise.resolve(undefined);
-    notify = function () {
-      promise.then(flush);
-    };
-  // for other environments - macrotask based on:
-  // - setImmediate
-  // - MessageChannel
-  // - window.postMessag
-  // - onreadystatechange
-  // - setTimeout
-  } else {
-    notify = function () {
-      // strange IE + webpack dev server bug - use .call(global)
-      macrotask.call(global, flush);
-    };
-  }
-
-  return function (fn) {
-    var task = { fn: fn, next: undefined };
-    if (last) last.next = task;
-    if (!head) {
-      head = task;
-      notify();
-    } last = task;
   };
 };
 
@@ -61828,17 +61739,6 @@ module.exports = __webpack_require__("7f8a").Promise;
 
 /***/ }),
 
-/***/ "8b70":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_0_5_0_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_1_0_1_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_15_5_0_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_1_2_5_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_5_0_vue_loader_lib_index_js_vue_loader_options_TinymceEditor_vue_vue_type_style_index_0_id_120acc5e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("c929");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_0_5_0_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_1_0_1_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_15_5_0_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_1_2_5_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_5_0_vue_loader_lib_index_js_vue_loader_options_TinymceEditor_vue_vue_type_style_index_0_id_120acc5e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_0_5_0_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_1_0_1_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_15_5_0_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_1_2_5_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_5_0_vue_loader_lib_index_js_vue_loader_options_TinymceEditor_vue_vue_type_style_index_0_id_120acc5e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_0_5_0_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_1_0_1_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_15_5_0_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_3_0_0_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_1_2_5_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_15_5_0_vue_loader_lib_index_js_vue_loader_options_TinymceEditor_vue_vue_type_style_index_0_id_120acc5e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "8bbf":
 /***/ (function(module, exports) {
 
@@ -62958,38 +62858,6 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ })
 
 /******/ });
-
-/***/ }),
-
-/***/ "9b40":
-/***/ (function(module, exports, __webpack_require__) {
-
-var ctx = __webpack_require__("6333");
-var call = __webpack_require__("41f2");
-var isArrayIter = __webpack_require__("b515");
-var anObject = __webpack_require__("2724");
-var toLength = __webpack_require__("c2ce");
-var getIterFn = __webpack_require__("56eb");
-var BREAK = {};
-var RETURN = {};
-var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
-  var iterFn = ITERATOR ? function () { return iterable; } : getIterFn(iterable);
-  var f = ctx(fn, that, entries ? 2 : 1);
-  var index = 0;
-  var length, step, iterator, result;
-  if (typeof iterFn != 'function') throw TypeError(iterable + ' is not iterable!');
-  // fast case for arrays with default iterator
-  if (isArrayIter(iterFn)) for (length = toLength(iterable.length); length > index; index++) {
-    result = entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);
-    if (result === BREAK || result === RETURN) return result;
-  } else for (iterator = iterFn.call(iterable); !(step = iterator.next()).done;) {
-    result = call(iterator, f, step.value, entries);
-    if (result === BREAK || result === RETURN) return result;
-  }
-};
-exports.BREAK = BREAK;
-exports.RETURN = RETURN;
-
 
 /***/ }),
 
@@ -93086,21 +92954,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "b515":
-/***/ (function(module, exports, __webpack_require__) {
-
-// check on default Array iterator
-var Iterators = __webpack_require__("c3d9");
-var ITERATOR = __webpack_require__("20a7")('iterator');
-var ArrayProto = Array.prototype;
-
-module.exports = function (it) {
-  return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
-};
-
-
-/***/ }),
-
 /***/ "b538":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -93435,6 +93288,734 @@ module.exports = function (KEY, exec) {
 
 /***/ }),
 
+/***/ "b5aa":
+/***/ (function(module, exports) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+!(function(global) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  var inModule = typeof module === "object";
+  var runtime = global.regeneratorRuntime;
+  if (runtime) {
+    if (inModule) {
+      // If regeneratorRuntime is defined globally and we're in a module,
+      // make the exports object identical to regeneratorRuntime.
+      module.exports = runtime;
+    }
+    // Don't bother evaluating the rest of this file if the runtime was
+    // already defined globally.
+    return;
+  }
+
+  // Define the runtime globally (as expected by generated code) as either
+  // module.exports (if we're in a module) or a new, empty object.
+  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  runtime.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunctionPrototype[toStringTagSymbol] =
+    GeneratorFunction.displayName = "GeneratorFunction";
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      prototype[method] = function(arg) {
+        return this._invoke(method, arg);
+      };
+    });
+  }
+
+  runtime.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  runtime.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      if (!(toStringTagSymbol in genFun)) {
+        genFun[toStringTagSymbol] = "GeneratorFunction";
+      }
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  runtime.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return Promise.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return Promise.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new Promise(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+  runtime.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  runtime.async = function(innerFn, outerFn, self, tryLocsList) {
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList)
+    );
+
+    return runtime.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        if (delegate.iterator.return) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  Gp[toStringTagSymbol] = "Generator";
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  Gp[iteratorSymbol] = function() {
+    return this;
+  };
+
+  Gp.toString = function() {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  runtime.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  runtime.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+})(
+  // In sloppy mode, unbound `this` refers to the global object, fallback to
+  // Function constructor if we're in global strict mode. That is sadly a form
+  // of indirect eval which violates Content Security Policy.
+  (function() {
+    return this || (typeof self === "object" && self);
+  })() || Function("return this")()
+);
+
+
+/***/ }),
+
 /***/ "b84d":
 /***/ (function(module, exports) {
 
@@ -93470,35 +94051,6 @@ module.exports = objectToString;
 module.exports = function (it) {
   if (typeof it != 'function') throw TypeError(it + ' is not a function!');
   return it;
-};
-
-
-/***/ }),
-
-/***/ "b998":
-/***/ (function(module, exports, __webpack_require__) {
-
-var ITERATOR = __webpack_require__("20a7")('iterator');
-var SAFE_CLOSING = false;
-
-try {
-  var riter = [7][ITERATOR]();
-  riter['return'] = function () { SAFE_CLOSING = true; };
-  // eslint-disable-next-line no-throw-literal
-  Array.from(riter, function () { throw 2; });
-} catch (e) { /* empty */ }
-
-module.exports = function (exec, skipClosing) {
-  if (!skipClosing && !SAFE_CLOSING) return false;
-  var safe = false;
-  try {
-    var arr = [7];
-    var iter = arr[ITERATOR]();
-    iter.next = function () { return { done: safe = true }; };
-    arr[ITERATOR] = function () { return iter; };
-    exec(arr);
-  } catch (e) { /* empty */ }
-  return safe;
 };
 
 
@@ -93889,27 +94441,6 @@ module.exports = function (key) {
 
 /***/ }),
 
-/***/ "bfb5":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var global = __webpack_require__("c8da");
-var dP = __webpack_require__("e6bd");
-var DESCRIPTORS = __webpack_require__("4f1d");
-var SPECIES = __webpack_require__("20a7")('species');
-
-module.exports = function (KEY) {
-  var C = global[KEY];
-  if (DESCRIPTORS && C && !C[SPECIES]) dP.f(C, SPECIES, {
-    configurable: true,
-    get: function () { return this; }
-  });
-};
-
-
-/***/ }),
-
 /***/ "bfbe":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -94129,13 +94660,6 @@ var global = module.exports = typeof window != 'undefined' && window.Math == Mat
   : Function('return this')();
 if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
 
-
-/***/ }),
-
-/***/ "c929":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -94689,29 +95213,6 @@ var store = global[SHARED] || (global[SHARED] = {});
 /***/ (function(module, exports) {
 
 exports.f = Object.getOwnPropertySymbols;
-
-
-/***/ }),
-
-/***/ "d1e4":
-/***/ (function(module, exports) {
-
-// fast apply, http://jsperf.lnkit.com/fast-apply/5
-module.exports = function (fn, args, that) {
-  var un = that === undefined;
-  switch (args.length) {
-    case 0: return un ? fn()
-                      : fn.call(that);
-    case 1: return un ? fn(args[0])
-                      : fn.call(that, args[0]);
-    case 2: return un ? fn(args[0], args[1])
-                      : fn.call(that, args[0], args[1]);
-    case 3: return un ? fn(args[0], args[1], args[2])
-                      : fn.call(that, args[0], args[1], args[2]);
-    case 4: return un ? fn(args[0], args[1], args[2], args[3])
-                      : fn.call(that, args[0], args[1], args[2], args[3]);
-  } return fn.apply(that, args);
-};
 
 
 /***/ }),
@@ -95505,34 +96006,6 @@ var $export = __webpack_require__("3427");
 var $parseFloat = __webpack_require__("7563");
 // 18.2.4 parseFloat(string)
 $export($export.G + $export.F * (parseFloat != $parseFloat), { parseFloat: $parseFloat });
-
-
-/***/ }),
-
-/***/ "dbff":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-// https://github.com/tc39/proposal-promise-finally
-
-var $export = __webpack_require__("a345");
-var core = __webpack_require__("f048");
-var global = __webpack_require__("c8da");
-var speciesConstructor = __webpack_require__("6950");
-var promiseResolve = __webpack_require__("5756");
-
-$export($export.P + $export.R, 'Promise', { 'finally': function (onFinally) {
-  var C = speciesConstructor(this, core.Promise || global.Promise);
-  var isFunction = typeof onFinally == 'function';
-  return this.then(
-    isFunction ? function (x) {
-      return promiseResolve(C, onFinally()).then(function () { return x; });
-    } : onFinally,
-    isFunction ? function (e) {
-      return promiseResolve(C, onFinally()).then(function () { throw e; });
-    } : onFinally
-  );
-} });
 
 
 /***/ }),
@@ -101088,300 +101561,6 @@ module.exports = { "default": __webpack_require__("2b64"), __esModule: true };
 
 /***/ }),
 
-/***/ "ea23":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var LIBRARY = __webpack_require__("e71b");
-var global = __webpack_require__("c8da");
-var ctx = __webpack_require__("6333");
-var classof = __webpack_require__("0c62");
-var $export = __webpack_require__("a345");
-var isObject = __webpack_require__("27e0");
-var aFunction = __webpack_require__("b8f9");
-var anInstance = __webpack_require__("45e1");
-var forOf = __webpack_require__("9b40");
-var speciesConstructor = __webpack_require__("6950");
-var task = __webpack_require__("31dd").set;
-var microtask = __webpack_require__("6eb9")();
-var newPromiseCapabilityModule = __webpack_require__("fe6a");
-var perform = __webpack_require__("6650");
-var userAgent = __webpack_require__("69a7");
-var promiseResolve = __webpack_require__("5756");
-var PROMISE = 'Promise';
-var TypeError = global.TypeError;
-var process = global.process;
-var versions = process && process.versions;
-var v8 = versions && versions.v8 || '';
-var $Promise = global[PROMISE];
-var isNode = classof(process) == 'process';
-var empty = function () { /* empty */ };
-var Internal, newGenericPromiseCapability, OwnPromiseCapability, Wrapper;
-var newPromiseCapability = newGenericPromiseCapability = newPromiseCapabilityModule.f;
-
-var USE_NATIVE = !!function () {
-  try {
-    // correct subclassing with @@species support
-    var promise = $Promise.resolve(1);
-    var FakePromise = (promise.constructor = {})[__webpack_require__("20a7")('species')] = function (exec) {
-      exec(empty, empty);
-    };
-    // unhandled rejections tracking support, NodeJS Promise without it fails @@species test
-    return (isNode || typeof PromiseRejectionEvent == 'function')
-      && promise.then(empty) instanceof FakePromise
-      // v8 6.6 (Node 10 and Chrome 66) have a bug with resolving custom thenables
-      // https://bugs.chromium.org/p/chromium/issues/detail?id=830565
-      // we can't detect it synchronously, so just check versions
-      && v8.indexOf('6.6') !== 0
-      && userAgent.indexOf('Chrome/66') === -1;
-  } catch (e) { /* empty */ }
-}();
-
-// helpers
-var isThenable = function (it) {
-  var then;
-  return isObject(it) && typeof (then = it.then) == 'function' ? then : false;
-};
-var notify = function (promise, isReject) {
-  if (promise._n) return;
-  promise._n = true;
-  var chain = promise._c;
-  microtask(function () {
-    var value = promise._v;
-    var ok = promise._s == 1;
-    var i = 0;
-    var run = function (reaction) {
-      var handler = ok ? reaction.ok : reaction.fail;
-      var resolve = reaction.resolve;
-      var reject = reaction.reject;
-      var domain = reaction.domain;
-      var result, then, exited;
-      try {
-        if (handler) {
-          if (!ok) {
-            if (promise._h == 2) onHandleUnhandled(promise);
-            promise._h = 1;
-          }
-          if (handler === true) result = value;
-          else {
-            if (domain) domain.enter();
-            result = handler(value); // may throw
-            if (domain) {
-              domain.exit();
-              exited = true;
-            }
-          }
-          if (result === reaction.promise) {
-            reject(TypeError('Promise-chain cycle'));
-          } else if (then = isThenable(result)) {
-            then.call(result, resolve, reject);
-          } else resolve(result);
-        } else reject(value);
-      } catch (e) {
-        if (domain && !exited) domain.exit();
-        reject(e);
-      }
-    };
-    while (chain.length > i) run(chain[i++]); // variable length - can't use forEach
-    promise._c = [];
-    promise._n = false;
-    if (isReject && !promise._h) onUnhandled(promise);
-  });
-};
-var onUnhandled = function (promise) {
-  task.call(global, function () {
-    var value = promise._v;
-    var unhandled = isUnhandled(promise);
-    var result, handler, console;
-    if (unhandled) {
-      result = perform(function () {
-        if (isNode) {
-          process.emit('unhandledRejection', value, promise);
-        } else if (handler = global.onunhandledrejection) {
-          handler({ promise: promise, reason: value });
-        } else if ((console = global.console) && console.error) {
-          console.error('Unhandled promise rejection', value);
-        }
-      });
-      // Browsers should not trigger `rejectionHandled` event if it was handled here, NodeJS - should
-      promise._h = isNode || isUnhandled(promise) ? 2 : 1;
-    } promise._a = undefined;
-    if (unhandled && result.e) throw result.v;
-  });
-};
-var isUnhandled = function (promise) {
-  return promise._h !== 1 && (promise._a || promise._c).length === 0;
-};
-var onHandleUnhandled = function (promise) {
-  task.call(global, function () {
-    var handler;
-    if (isNode) {
-      process.emit('rejectionHandled', promise);
-    } else if (handler = global.onrejectionhandled) {
-      handler({ promise: promise, reason: promise._v });
-    }
-  });
-};
-var $reject = function (value) {
-  var promise = this;
-  if (promise._d) return;
-  promise._d = true;
-  promise = promise._w || promise; // unwrap
-  promise._v = value;
-  promise._s = 2;
-  if (!promise._a) promise._a = promise._c.slice();
-  notify(promise, true);
-};
-var $resolve = function (value) {
-  var promise = this;
-  var then;
-  if (promise._d) return;
-  promise._d = true;
-  promise = promise._w || promise; // unwrap
-  try {
-    if (promise === value) throw TypeError("Promise can't be resolved itself");
-    if (then = isThenable(value)) {
-      microtask(function () {
-        var wrapper = { _w: promise, _d: false }; // wrap
-        try {
-          then.call(value, ctx($resolve, wrapper, 1), ctx($reject, wrapper, 1));
-        } catch (e) {
-          $reject.call(wrapper, e);
-        }
-      });
-    } else {
-      promise._v = value;
-      promise._s = 1;
-      notify(promise, false);
-    }
-  } catch (e) {
-    $reject.call({ _w: promise, _d: false }, e); // wrap
-  }
-};
-
-// constructor polyfill
-if (!USE_NATIVE) {
-  // 25.4.3.1 Promise(executor)
-  $Promise = function Promise(executor) {
-    anInstance(this, $Promise, PROMISE, '_h');
-    aFunction(executor);
-    Internal.call(this);
-    try {
-      executor(ctx($resolve, this, 1), ctx($reject, this, 1));
-    } catch (err) {
-      $reject.call(this, err);
-    }
-  };
-  // eslint-disable-next-line no-unused-vars
-  Internal = function Promise(executor) {
-    this._c = [];             // <- awaiting reactions
-    this._a = undefined;      // <- checked in isUnhandled reactions
-    this._s = 0;              // <- state
-    this._d = false;          // <- done
-    this._v = undefined;      // <- value
-    this._h = 0;              // <- rejection state, 0 - default, 1 - handled, 2 - unhandled
-    this._n = false;          // <- notify
-  };
-  Internal.prototype = __webpack_require__("1e3a")($Promise.prototype, {
-    // 25.4.5.3 Promise.prototype.then(onFulfilled, onRejected)
-    then: function then(onFulfilled, onRejected) {
-      var reaction = newPromiseCapability(speciesConstructor(this, $Promise));
-      reaction.ok = typeof onFulfilled == 'function' ? onFulfilled : true;
-      reaction.fail = typeof onRejected == 'function' && onRejected;
-      reaction.domain = isNode ? process.domain : undefined;
-      this._c.push(reaction);
-      if (this._a) this._a.push(reaction);
-      if (this._s) notify(this, false);
-      return reaction.promise;
-    },
-    // 25.4.5.1 Promise.prototype.catch(onRejected)
-    'catch': function (onRejected) {
-      return this.then(undefined, onRejected);
-    }
-  });
-  OwnPromiseCapability = function () {
-    var promise = new Internal();
-    this.promise = promise;
-    this.resolve = ctx($resolve, promise, 1);
-    this.reject = ctx($reject, promise, 1);
-  };
-  newPromiseCapabilityModule.f = newPromiseCapability = function (C) {
-    return C === $Promise || C === Wrapper
-      ? new OwnPromiseCapability(C)
-      : newGenericPromiseCapability(C);
-  };
-}
-
-$export($export.G + $export.W + $export.F * !USE_NATIVE, { Promise: $Promise });
-__webpack_require__("0925")($Promise, PROMISE);
-__webpack_require__("bfb5")(PROMISE);
-Wrapper = __webpack_require__("f048")[PROMISE];
-
-// statics
-$export($export.S + $export.F * !USE_NATIVE, PROMISE, {
-  // 25.4.4.5 Promise.reject(r)
-  reject: function reject(r) {
-    var capability = newPromiseCapability(this);
-    var $$reject = capability.reject;
-    $$reject(r);
-    return capability.promise;
-  }
-});
-$export($export.S + $export.F * (LIBRARY || !USE_NATIVE), PROMISE, {
-  // 25.4.4.6 Promise.resolve(x)
-  resolve: function resolve(x) {
-    return promiseResolve(LIBRARY && this === Wrapper ? $Promise : this, x);
-  }
-});
-$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__("b998")(function (iter) {
-  $Promise.all(iter)['catch'](empty);
-})), PROMISE, {
-  // 25.4.4.1 Promise.all(iterable)
-  all: function all(iterable) {
-    var C = this;
-    var capability = newPromiseCapability(C);
-    var resolve = capability.resolve;
-    var reject = capability.reject;
-    var result = perform(function () {
-      var values = [];
-      var index = 0;
-      var remaining = 1;
-      forOf(iterable, false, function (promise) {
-        var $index = index++;
-        var alreadyCalled = false;
-        values.push(undefined);
-        remaining++;
-        C.resolve(promise).then(function (value) {
-          if (alreadyCalled) return;
-          alreadyCalled = true;
-          values[$index] = value;
-          --remaining || resolve(values);
-        }, reject);
-      });
-      --remaining || resolve(values);
-    });
-    if (result.e) reject(result.v);
-    return capability.promise;
-  },
-  // 25.4.4.4 Promise.race(iterable)
-  race: function race(iterable) {
-    var C = this;
-    var capability = newPromiseCapability(C);
-    var reject = capability.reject;
-    var result = perform(function () {
-      forOf(iterable, false, function (promise) {
-        C.resolve(promise).then(capability.resolve, reject);
-      });
-    });
-    if (result.e) reject(result.v);
-    return capability.promise;
-  }
-});
-
-
-/***/ }),
-
 /***/ "eb00":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -102072,32 +102251,6 @@ var defineProperty = __webpack_require__("5f23").f;
 module.exports = function (name) {
   var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
   if (name.charAt(0) != '_' && !(name in $Symbol)) defineProperty($Symbol, name, { value: wksExt.f(name) });
-};
-
-
-/***/ }),
-
-/***/ "fe6a":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// 25.4.1.5 NewPromiseCapability(C)
-var aFunction = __webpack_require__("b8f9");
-
-function PromiseCapability(C) {
-  var resolve, reject;
-  this.promise = new C(function ($$resolve, $$reject) {
-    if (resolve !== undefined || reject !== undefined) throw TypeError('Bad Promise constructor');
-    resolve = $$resolve;
-    reject = $$reject;
-  });
-  this.resolve = aFunction(resolve);
-  this.reject = aFunction(reject);
-}
-
-module.exports.f = function (C) {
-  return new PromiseCapability(C);
 };
 
 

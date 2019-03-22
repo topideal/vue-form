@@ -353,7 +353,8 @@ export const layoutComponents = [
         options: {
             gutter: 0,
             justify: 'start',
-            align: 'top'
+            align: 'top',
+            isReactive:false
         }
     },{
         type: 'eltable',
@@ -383,12 +384,20 @@ export const layoutBySelfComponents = [
         type: 'saveBtn',
         name: '保 存',
         icon: 'chalkboard',
-        options: {}
+        options: {
+            action:'',
+            actionName:'',
+            js:''
+        }
     }, {
         type: 'submitBtn',
         name: '提 交',
         icon: 'chalkboard',
-        options: {}
+        options: {
+            action:'',
+            actionName:'',
+            js:''
+        }
     },{
         type: 'closeBtn',
         name: '关 闭',

@@ -7,7 +7,6 @@
     center
     :width="width"
     ref="elDialog"
-    :id="id"
     :append-to-body="true"
     >
     <span v-if="show">

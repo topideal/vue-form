@@ -36,19 +36,19 @@ $primary-background-color: #ecf5ff;
 }
 
 .components-list{
-  padding: 8px 0;
-  width: 100%;
+  padding: 8px 2px;
+  width: 97%;
   height: 100%;
 
   .widget-cate{
-    padding: 8px 12px;
+    padding: 8px 2px;
     font-size: 13px;
   }
 
   ul{
     position: relative;
     overflow: hidden;
-    padding: 0 10px 10px;
+    padding: 0 0 10px 0;
     margin: 0;
   }
 
@@ -228,6 +228,7 @@ $primary-background-color: #ecf5ff;
 
   .config-content{
     padding: 10px;
+    height: 100%;
 
     .el-form-item__label{
       padding: 0;
