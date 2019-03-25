@@ -1,7 +1,7 @@
 <template>
     <div class="form-config-container">
-        <el-form label-position="top">
-            <el-form-item label="标签对齐方式">
+        <el-form label-width="80px" label-position="top">
+            <el-form-item label="标签对齐方式" >
                 <el-radio-group v-model="data.labelPosition" size="mini">
                     <el-radio-button label="left">左对齐</el-radio-button>
                     <el-radio-button label="right">右对齐</el-radio-button>
@@ -9,11 +9,11 @@
                 </el-radio-group>
             </el-form-item>
 
-            <el-form-item label="表单字段宽度">
+            <el-form-item label="标签宽度">
                 <el-input-number v-model="data.labelWidth" :min="0" :max="200" :step="10"></el-input-number>
             </el-form-item>
 
-            <el-form-item label="表单字体">
+            <el-form-item label="表单字体" label-position="right">
                 <el-select v-model="data.fontFamily" size="mini">
                     <el-option value="STHeiti" label="华文黑体"></el-option>
                     <el-option value="STKaiti" label="华文楷体"></el-option>

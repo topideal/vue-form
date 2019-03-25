@@ -3,84 +3,84 @@
     <el-container>
         <div class="ys-float-btn" :style="{'left':left+'px','top':top+'px'}"
              ref="leftControlBtn"
-             @click ="onLeftControlBtnClicked">
+             @click="onLeftControlBtnClicked">
             <i :class="leftSideShow?'el-icon-caret-left':'el-icon-caret-right'"></i>
         </div>
 
         <div class="ys-float-btn" :style="{'right':right+'px','top':top+'px'}"
              ref="rightControlBtn"
-             @click ="onRightControlBtnClicked">
+             @click="onRightControlBtnClicked">
             <i :class="rightSideShow?'el-icon-caret-right':'el-icon-caret-left'"></i>
         </div>
         <el-aside :width="'120px'" v-show="leftSideShow">
-             <happy-scroll color="rgba(0,0,0,0.5)" resize hide-horizontal>
-            <div class="components-list">
-                <div class="widget-cate">基础控件</div>
-                <draggable element="ul" :list="basicComponents"
-                           :options="{group:{ name:'people', pull:'clone',put:false},sort:false, ghostClass: 'ghost'}"
-                           @end="handleMoveEnd"
-                           @start="handleMoveStart"
-                           :move="handleMove"
-                >
+            <happy-scroll color="rgba(0,0,0,0.5)" resize hide-horizontal>
+                <div class="components-list">
+                    <div class="widget-cate">基础控件</div>
+                    <draggable element="ul" :list="basicComponents"
+                               :options="{group:{ name:'people', pull:'clone',put:false},sort:false, ghostClass: 'ghost'}"
+                               @end="handleMoveEnd"
+                               @start="handleMoveStart"
+                               :move="handleMove"
+                    >
 
-                    <li class="form-edit-widget-label" v-for="(item, index) in basicComponents" :key="index">
-                        <a>
-                            <icon class="icon" :name="item.icon"></icon>
-                            <span>{{item.name}}</span>
-                        </a>
-                    </li>
-                </draggable>
+                        <li class="form-edit-widget-label" v-for="(item, index) in basicComponents" :key="index">
+                            <a>
+                                <icon class="icon" :name="item.icon"></icon>
+                                <span>{{item.name}}</span>
+                            </a>
+                        </li>
+                    </draggable>
 
-                <!--<div class="widget-cate">高级控件</div>
-                <draggable element="ul" :list="advanceComponents"
-                           :options="{group:{ name:'people', pull:'clone',put:false},sort:false, ghostClass: 'ghost'}"
-                           @end="handleMoveEnd"
-                           @start="handleMoveStart"
-                           :move="handleMove"
-                >
+                    <!--<div class="widget-cate">高级控件</div>
+                    <draggable element="ul" :list="advanceComponents"
+                               :options="{group:{ name:'people', pull:'clone',put:false},sort:false, ghostClass: 'ghost'}"
+                               @end="handleMoveEnd"
+                               @start="handleMoveStart"
+                               :move="handleMove"
+                    >
 
-                    <li class="form-edit-widget-label" v-for="(item, index) in advanceComponents" :key="index">
-                        <a>
-                            <icon class="icon" :name="item.icon"></icon>
-                            <span>{{item.name}}</span>
-                        </a>
-                    </li>
-                </draggable>-->
+                        <li class="form-edit-widget-label" v-for="(item, index) in advanceComponents" :key="index">
+                            <a>
+                                <icon class="icon" :name="item.icon"></icon>
+                                <span>{{item.name}}</span>
+                            </a>
+                        </li>
+                    </draggable>-->
 
-                <div class="widget-cate">布局控件</div>
-                <draggable element="ul" :list="layoutComponents"
-                           :options="{group:{ name:'people', pull:'clone',put:false},sort:false, ghostClass: 'ghost'}"
-                           @end="handleMoveEnd"
-                           @start="handleMoveStart"
-                           :move="handleMove"
-                >
+                    <div class="widget-cate">布局控件</div>
+                    <draggable element="ul" :list="layoutComponents"
+                               :options="{group:{ name:'people', pull:'clone',put:false},sort:false, ghostClass: 'ghost'}"
+                               @end="handleMoveEnd"
+                               @start="handleMoveStart"
+                               :move="handleMove"
+                    >
 
-                    <li class="form-edit-widget-label data-grid" v-for="(item, index) in layoutComponents"
-                        :key="index">
-                        <a>
-                            <icon class="icon" :name="item.icon"></icon>
-                            <span>{{item.name}}</span>
-                        </a>
-                    </li>
-                </draggable>
+                        <li class="form-edit-widget-label data-grid" v-for="(item, index) in layoutComponents"
+                            :key="index">
+                            <a>
+                                <icon class="icon" :name="item.icon"></icon>
+                                <span>{{item.name}}</span>
+                            </a>
+                        </li>
+                    </draggable>
 
-                <div class="widget-cate">自定义控件</div>
-                <draggable element="ul" :list="layoutBySelfComponents"
-                           :options="{group:{ name:'people', pull:'clone',put:false},sort:false, ghostClass: 'ghost'}"
-                           @end="handleMoveEnd"
-                           @start="handleMoveStart"
-                           :move="handleMove"
-                >
+                    <div class="widget-cate">自定义控件</div>
+                    <draggable element="ul" :list="layoutBySelfComponents"
+                               :options="{group:{ name:'people', pull:'clone',put:false},sort:false, ghostClass: 'ghost'}"
+                               @end="handleMoveEnd"
+                               @start="handleMoveStart"
+                               :move="handleMove"
+                    >
 
-                    <li class="form-edit-widget-label" v-for="(item, index) in layoutBySelfComponents" :key="index">
-                        <a>
-                            <icon class="icon" :name="item.icon"></icon>
-                            <span>{{item.name}}</span>
-                        </a>
-                    </li>
-                </draggable>
-            </div>
-             </happy-scroll>
+                        <li class="form-edit-widget-label" v-for="(item, index) in layoutBySelfComponents" :key="index">
+                            <a>
+                                <icon class="icon" :name="item.icon"></icon>
+                                <span>{{item.name}}</span>
+                            </a>
+                        </li>
+                    </draggable>
+                </div>
+            </happy-scroll>
         </el-aside>
         <el-container class="center-container" direction="vertical">
             <el-header class="btn-bar" style="height: 45px;">
@@ -105,28 +105,27 @@
         </el-container>
 
         <el-aside class="widget-config-container" :width="'260px'" v-show="rightSideShow">
-            <happy-scroll color="rgba(0,0,0,0.5)" size="10">
-                <el-container>
-                    <el-header height="45px">
-                        <div class="config-tab" :class="{active: configTab=='widget'}"
-                             @click="handleConfigSelect('widget')">字段属性
-                        </div>
-                        <div class="config-tab" :class="{active: configTab=='form'}"
-                             @click="handleConfigSelect('form')">
-                            表单属性
-                        </div>
-                    </el-header>
-                    <el-main class="config-content">
 
-
+            <el-container>
+                <el-header height="45px" style="padding-left: 40px">
+                    <div class="config-tab" :class="{active: configTab=='widget'}"
+                         @click="handleConfigSelect('widget')">字段属性
+                    </div>
+                    <div class="config-tab" :class="{active: configTab=='form'}"
+                         @click="handleConfigSelect('form')">
+                        表单属性
+                    </div>
+                </el-header>
+                <el-main class="config-content">
+                    <happy-scroll color="rgba(0,0,0,0.5)" resize hide-horizontal>
                         <widget-config v-show="configTab=='widget'" :data="widgetFormSelect"
                                        :widgetFormConfig="widgetForm.config"></widget-config>
                         <form-config v-show="configTab=='form'" :data="widgetForm.config"></form-config>
 
+                    </happy-scroll>
+                </el-main>
+            </el-container>
 
-                    </el-main>
-                </el-container>
-            </happy-scroll>
         </el-aside>
 
 
@@ -243,12 +242,12 @@
                     config: {
                         fontFamily: 'SimSun',
                         labelWidth: 100,
-                        labelPosition: 'top',
+                        labelPosition: 'right',
                         billId: null,
                         templateId: null
                     }
                 },
-                configTab: 'form',
+                configTab: 'widget',
                 widgetFormSelect: {},
                 previewVisible: false,
                 importJsonVisible: false,
@@ -262,32 +261,32 @@
                 importJsonTemplate: '',
                 templateList: [],
                 previewDialogWidth: 1000,
-                left:80,
-                right:230,
-                top:2,
-                leftSideShow:true,
-                rightSideShow:true,
+                left: 80,
+                right: 230,
+                top: 2,
+                leftSideShow: true,
+                rightSideShow: true,
             }
         },
         mounted() {
             this.handleOpenTemplate()
         },
         methods: {
-            onLeftControlBtnClicked:function(){
-                this.leftSideShow=!this.leftSideShow
-                if(this.leftSideShow){
-                    this.left=80
-                }else{
-                    this.left=5
+            onLeftControlBtnClicked: function () {
+                this.leftSideShow = !this.leftSideShow
+                if (this.leftSideShow) {
+                    this.left = 80
+                } else {
+                    this.left = 5
                 }
 
             },
-            onRightControlBtnClicked:function(){
-                this.rightSideShow=!this.rightSideShow
-                if(this.rightSideShow){
-                    this.right=230
-                }else{
-                    this.right=5
+            onRightControlBtnClicked: function () {
+                this.rightSideShow = !this.rightSideShow
+                if (this.rightSideShow) {
+                    this.right = 230
+                } else {
+                    this.right = 5
                 }
             },
             handleConfigSelect(value) {
@@ -449,16 +448,17 @@
         /*background: url('../assets/form_empty.png') no-repeat;
         background-position: 50%;*/
     }
-    .ys-float-btn{
-        width:40px;
+
+    .ys-float-btn {
+        width: 40px;
         height: 40px;
         z-index: 20;
         display: flex;
         position: fixed;
         font-size: 36px;
- /*       background-color: #d3d3d3;
-        border: 2px #666666 solid;
-        border-radius: 40px;*/
+        /*       background-color: #d3d3d3;
+               border: 2px #666666 solid;
+               border-radius: 40px;*/
         cursor: pointer;
     }
 

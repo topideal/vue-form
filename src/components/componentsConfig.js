@@ -4,6 +4,7 @@ export const basicComponents = [
         name: '分割线',
         icon: 'chalkboard',
         options: {
+            showLabel: false,
             fontalign: 'center',
             fontcolor: '#333333',
             size: {
@@ -20,6 +21,7 @@ export const basicComponents = [
         name: '标签',
         icon: 'chalkboard',
         options: {
+            showLabel: false,
             padding: {
                 top: 10,
                 bottom: 10
@@ -61,7 +63,7 @@ export const basicComponents = [
         widgetType: 1,
         options: {
             showLabel: true,
-            width: '100%',
+            width: '100',
             defaultValue: '',
             required: false,
             dataType: 'string',
@@ -77,7 +79,7 @@ export const basicComponents = [
         widgetType: 1,
         options: {
             showLabel: true,
-            width: '100%',
+            width: '100',
             defaultValue: '',
             required: false,
             pattern: '',
@@ -91,7 +93,7 @@ export const basicComponents = [
          icon: 'sort-numeric-up',
          options: {
              showLabel:true,
-             width: '100%',
+             width: '100',
              required: false,
              defaultValue: 0,
              min: '',
@@ -117,7 +119,7 @@ export const basicComponents = [
                 }
             ],
             required: false,
-            width: '100%',
+            width: '100',
             remote: true,
             remoteOptions: [],
             props: {
@@ -150,7 +152,7 @@ export const basicComponents = [
                 }
             ],
             required: false,
-            width: '100%',
+            width: '100',
             remote: true,
             remoteOptions: [],
             props: {
@@ -181,7 +183,7 @@ export const basicComponents = [
              arrowControl: true,
              format: 'HH:mm:ss',
              required: false,
-             width: '100%',
+             width: '100',
          }
      },*/
     {
@@ -203,7 +205,7 @@ export const basicComponents = [
             format: 'yyyy-MM-dd',
             timestamp: false,
             required: false,
-            width: '100%',
+            width: '100',
         }
     },
     /*{
@@ -244,7 +246,7 @@ export const basicComponents = [
             placeholder: '',
             required: false,
             showLabel: true,
-            width: '100%',
+            width: '100',
             options: [
                 {
                     value: '下拉框1'
@@ -283,7 +285,7 @@ export const basicComponents = [
             step: 1,
             showInput: false,
             range: false,
-            width: '100%'
+            width: '100'
         }
     }*/
     ,{
@@ -308,7 +310,7 @@ export const basicComponents = [
         widgetType: 1,
         options: {
             showLabel: true,
-            width: '100%',
+            width: '100',
             size: {
                 height: 100,
             },
@@ -351,6 +353,7 @@ export const layoutComponents = [
             }
         ],
         options: {
+            showLabel:false,
             gutter: 0,
             justify: 'start',
             align: 'top',
@@ -364,7 +367,7 @@ export const layoutComponents = [
         valueConsistsOf:'LEAF_PRIORITY',
         options: {
             showLabel: true,
-            width: '100%',
+            width: '100',
             props: {
                 value: 'value',
                 label: 'label'
@@ -385,6 +388,7 @@ export const layoutBySelfComponents = [
         name: '保 存',
         icon: 'chalkboard',
         options: {
+            showLabel: false,
             action:'',
             actionName:'',
             js:''
@@ -394,6 +398,7 @@ export const layoutBySelfComponents = [
         name: '提 交',
         icon: 'chalkboard',
         options: {
+            showLabel: false,
             action:'',
             actionName:'',
             js:''
@@ -402,12 +407,16 @@ export const layoutBySelfComponents = [
         type: 'closeBtn',
         name: '关 闭',
         icon: 'chalkboard',
-        options: {}
+        options: {
+            showLabel: false,
+        }
     }, {
         type: 'backBtn',
         name: '返 回',
         icon: 'chalkboard',
-        options: {}
+        options: {
+            showLabel: false,
+        }
     },
     /*{
         type: 'passBtn',
@@ -435,7 +444,7 @@ export const layoutBySelfComponents = [
             placeholder: '',
             required: false,
             showLabel: true,
-            width: '100%',
+            width: '100',
             options: [],
             remote: false,
             remoteOptions: [],
@@ -455,7 +464,7 @@ export const layoutBySelfComponents = [
             placeholder: '',
             required: false,
             showLabel: true,
-            width: '100%',
+            width: '100',
             options: [],
             remote: false,
             remoteOptions: [],
@@ -474,7 +483,7 @@ export const layoutBySelfComponents = [
             placeholder: '',
             required: false,
             showLabel: true,
-            width: '100%',
+            width: '100',
             options: [],
             remote: true,
             remoteOptions: [],

@@ -2,56 +2,48 @@
     <div v-if="show">
         <el-form label-position="top">
             <template v-if="Object.keys(data).indexOf('widgetType')>=0 && data.widgetType!=7">
-                <el-form-item label="数据绑定字段">
-                    <!-- <el-input v-model="data.model"></el-input>-->
-
+                <el-form-item label="对应字段">
                     <el-select v-model="data.model" size="mini" @change="handleKeyChooseFnc">
                         <el-option v-for="(item, index) in keyData" :key="index" :value="item.value"
                                    :label="item.label"></el-option>
-
                     </el-select>
                 </el-form-item>
             </template>
 
-            <el-form-item label="是否显示标签"
-                          v-if="Object.keys(data.options).indexOf('showLabel')>=0 && data.type != 'button' && data.type != 'grid' && data.type != 'label' && data.type != 'table'">
-                <el-switch
-                        v-model="data.options.showLabel"
-                >
-                </el-switch>
-            </el-form-item>
-
-            <el-form-item label="标题" v-if="Object.keys(data).indexOf('widgetType')>=0 || data.type == 'label' || data.type == 'button' || data.type == 'link'">
-                <el-input v-model="data.name"></el-input>
-            </el-form-item>
-            <!--<el-form-item label="占位内容"
-                          v-if="Object.keys(data.options).indexOf('placeholder')>=0 && (data.type!='time' || data.type!='date')">
-                <el-input v-model="data.options.placeholder"></el-input>
-            </el-form-item>-->
+            <template>
 
 
-            <el-form-item label="宽度" v-if="Object.keys(data.options).indexOf('width')>=0">
-                <el-input v-model="data.options.width"></el-input>
+                <el-form-item label="标签"  v-if="(data.type != 'separation' && data.type != 'button' && data.type != 'grid' && data.type != 'label' && data.type != 'table') || (Object.keys(data).indexOf('widgetType')>=0 || data.type == 'label' || data.type == 'button' || data.type == 'link')">
+                    <el-col :span="2">
+                        <el-tooltip class="item" effect="dark" content="显示/隐藏标签" placement="bottom">
+                            <el-checkbox v-model="data.options.showLabel"
+                                         v-if="data.type != 'separation' && data.type != 'button' && data.type != 'grid' && data.type != 'label' && data.type != 'table'">
+
+                            </el-checkbox>
+
+                        </el-tooltip>
+                    </el-col>
+                    <el-col :span="22">
+                        <el-input v-model="data.name"
+                                  v-if="Object.keys(data).indexOf('widgetType')>=0 || data.type == 'label' || data.type == 'button' || data.type == 'link'"></el-input>
+                    </el-col>
+                </el-form-item>
+            </template>
+
+
+            <el-form-item label="长度" v-if="Object.keys(data.options).indexOf('width')>=0">
+                <el-input-number v-model.number="data.options.width" :step="10" :min="10" :max="100" size="mini" controls-position="right"></el-input-number>&nbsp;%
             </el-form-item>
 
             <el-form-item label="大小" v-if="Object.keys(data.options).indexOf('size')>=0">
-                宽度：
-                <el-input style="width: 70px;" type="number" v-model.number="data.options.size.width"
-                          min="0"></el-input>
-                高度：
-                <el-input style="width: 70px;" type="number" v-model.number="data.options.size.height"
-                          :min="data.type=='separation'?1:0"></el-input>
+                宽:<el-input-number v-model.number="data.options.size.width"  :step="10" :min="10" :max="100" size="mini" controls-position="right"></el-input-number>&nbsp;%<br/>
+                高:<el-input-number v-model.number="data.options.size.height" :step="1" :min="data.type=='separation'?1:0" :max="30" size="mini" controls-position="right"></el-input-number>&nbsp;px
+
             </el-form-item>
             <el-form-item label="距离" v-if="Object.keys(data.options).indexOf('padding')>=0">
-                顶：
-                <el-input style="width: 70px;" type="number" v-model.number="data.options.padding.top"
-                          min="0"></el-input>
-                px
-                底：
-                <el-input style="width: 70px;" type="number" v-model.number="data.options.padding.bottom"
-                          min="0"></el-input>
-                px
-            </el-form-item>
+                顶：<el-input-number v-model.number="data.options.padding.top" :step="5" :min="0" :max="500" size="mini" controls-position="right"></el-input-number>&nbsp;px<br/>
+                底：<el-input-number v-model.number="data.options.padding.bottom" :step="5" :min="0" :max="500" size="mini" controls-position="right"></el-input-number>&nbsp;px
+             </el-form-item>
 
             <el-form-item label="字号" v-if="Object.keys(data.options).indexOf('fontsize')>=0">
                 <el-select v-model="data.options.fontsize">
@@ -96,7 +88,7 @@
             <el-form-item label="步长" v-if="Object.keys(data.options).indexOf('step')>=0">
                 <el-input-number v-model="data.options.step" :min="0" :max="100" :step="1"></el-input-number>
             </el-form-item>
-            <el-form-item label="是否多选" v-if="data.type=='select'">
+            <el-form-item label="多选" v-if="data.type=='select'">
                 <el-switch v-model="data.options.multiple" @change="handleSelectMuliple"></el-switch>
             </el-form-item>
             <el-form-item label="允许半选" v-if="Object.keys(data.options).indexOf('allowHalf')>=0">
@@ -294,9 +286,9 @@
                 </el-form-item>
 
 
-
             </template>
-            <template v-if="Object.keys(data.options).indexOf('js')>=0 || data.type == 'saveBtn' || data.type == 'submitBtn'">
+            <template
+                    v-if="Object.keys(data.options).indexOf('js')>=0 || data.type == 'saveBtn' || data.type == 'submitBtn'">
                 <el-input type="textarea" :rows="5"
                           v-model="data.options.js"></el-input>
             </template>
@@ -327,7 +319,7 @@
                 <el-form-item label="栅格间隔">
                     <el-input type="number" v-model.number="data.options.gutter"></el-input>
                 </el-form-item>
-                <el-form-item label="响应式" >
+                <el-form-item label="响应式">
                     <el-switch v-model="data.options.isReactive">
                     </el-switch>
                 </el-form-item>
@@ -390,12 +382,7 @@
                                  v-if="Object.keys(data.options).indexOf('arrowControl')>=0">使用箭头进行时间选择
                     </el-checkbox>
                 </el-form-item>
-                <el-form-item label="多选" v-if="Object.keys(data.options).indexOf('multiple')>=0">
-                    <el-switch
-                            v-model="data.options.multiple"
-                    >
-                    </el-switch>
-                </el-form-item>
+
                 <el-form-item label="校验">
                     <div>
                         <el-checkbox v-model="data.options.required">必填</el-checkbox>
@@ -434,10 +421,10 @@
         mounted() {
             this.getCommonDicData()
             this.getTableCols()
-           /* let vm = this
-            vm.$root.Bus.$on('listen-to-billid-event', (data) => {
-                vm.getTableCols(data)
-            })*/
+            /* let vm = this
+             vm.$root.Bus.$on('listen-to-billid-event', (data) => {
+                 vm.getTableCols(data)
+             })*/
 
 
         },
@@ -490,8 +477,8 @@
             },
             getTableCols: function () {
                 let that = this
-                let workflowId=that.$route.query.workflowId
-                console.log("workflowId===>",workflowId)
+                let workflowId = that.$route.query.workflowId
+                console.log("workflowId===>", workflowId)
                 if (workflowId) {
                     request({
                         method: 'get',
@@ -590,6 +577,9 @@
                 }
             },
             'data.options.required': function (val) {
+               // console.log("this.data.name",this.data.name)
+              //  console.log("data.options.required",val)
+
                 if (val) {
                     this.validator.required = {required: true, message: `${this.data.name}必须填写`}
                 } else {
@@ -624,7 +614,7 @@
                     this.validator.pattern = null
                 }
 
-               // this.generateRule()
+                // this.generateRule()
             }
         }
     }

@@ -1,6 +1,6 @@
 <template>
     <div class="widget-form-container">
-        <el-form :label-position="data.config.labelPosition" :label-width="data.config.labelWidth + 'px'" v-bind:style="{fontFamily:data.config.fontFamily}">
+        <el-form :label-position="data.config.labelPosition" :label-width="data.config.labelWidth + 'px'" :style="{fontFamily:data.config.fontFamily}">
 
             <draggable class="widget-form-list"
 
@@ -39,6 +39,7 @@
                                                     :element="el"
                                                     :select.sync="selectWidget"
                                                     :index="i"
+                                                    :widgetConfig="data.config"
                                                     :data="col"></widget-form-item>
                                         </draggable>
                                     </div>
@@ -54,7 +55,7 @@
                     </template>
                     <template v-else>
                         <widget-form-item v-if="element && element.key" :key="element.key" :element="element"
-                                          :select.sync="selectWidget" :index="index" :data="data"></widget-form-item>
+                                          :select.sync="selectWidget" :index="index" :data="data" :widgetConfig="data.config"></widget-form-item>
                     </template>
                 </template>
 

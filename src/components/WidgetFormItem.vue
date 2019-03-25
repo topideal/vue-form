@@ -1,17 +1,19 @@
 <template>
-    <el-form-item class="widget-view "
+    <el-form-item class="widget-view " :label-width="(element.options.showLabel?(widgetConfig.labelWidth?widgetConfig.labelWidth:0):0) +'px'"
                   :class="{active: selectWidget.key == element.key, 'is_req': element.options.required}"
-                  :label="element.options.showLabel?element.name:''"
                   @click.native="handleSelectWidget(index)"
     >
+        <span slot="label" v-if="element.options.showLabel">{{element.name}}</span>
         <template v-if="element.type == 'separation'">
-            <div :style="{paddingTop:element.options.padding.top+'px',paddingBottom:element.options.padding.bottom+'px'}">
-                <div :style="{border:'0px',height:element.options.size.height+'px' ,width:element.options.size.width+'%',backgroundColor:element.options.fontcolor,margin:'0 auto'}"
-                     v-if="element.options.fontalign== 'center'"/>
-                <div :style="{border:'0px',height:element.options.size.height+'px' ,width:element.options.size.width+'%',backgroundColor:element.options.fontcolor,float:element.options.fontalign}"
-                     v-if="element.options.fontalign!= 'center'"/>
-            </div>
+
+                <div :style="{paddingTop:element.options.padding.top+'px',paddingBottom:element.options.padding.bottom+'px'}">
+                    <div :style="{border:'0px',height:element.options.size.height+'px' ,width:element.options.size.width+'%',backgroundColor:element.options.fontcolor,margin:'0 auto'}"
+                         v-if="element.options.fontalign== 'center'"/>
+                    <div :style="{border:'0px',height:element.options.size.height+'px' ,width:element.options.size.width+'%',backgroundColor:element.options.fontcolor,float:element.options.fontalign}"
+                         v-if="element.options.fontalign!= 'center'"/>
+                </div>
         </template>
+
         <template v-if="element.type=='label'">
             <div>
                 <div :style="{paddingTop:element.options.padding.top+'px',paddingBottom:element.options.padding.bottom+'px',color:element.options.fontcolor,textAlign:element.options.fontalign,fontSize:element.options.fontsize+'px',lineHeight:1}">
@@ -65,7 +67,6 @@
             <el-button type="danger" @click="handleRejectBtn">退 回</el-button>
         </template>
 
-
         <template v-if="element.type == 'org'">
             <div>
                 <treeselect v-model="element.options.defaultValue"
@@ -107,7 +108,7 @@
             </div>
         </template>
         <template v-if="element.type == 'eltable'">
-            <div :style="{'width': element.options.width}">
+            <div :style="{'width': element.options.width+'%'}">
                 <div align="right" style="width: 100%;padding-bottom: 10px;">
                     <el-button type="primary" @click="$refs.editable.insert({})">新增</el-button>
                     <el-button type="danger" @click="$refs.editable.removeSelecteds()">删除选中</el-button>
@@ -132,7 +133,7 @@
         <template v-if="element.type == 'input'">
             <el-input
                     v-model="element.options.defaultValue"
-                    :style="{width: element.options.width}"
+                    :style="{width: element.options.width+'%'}"
                     :placeholder="element.options.placeholder"
                     :readonly="element.options.readonly"
             ></el-input>
@@ -141,7 +142,7 @@
         <template v-if="element.type == 'textarea'">
             <el-input type="textarea" :autosize="{minRows:2,maxRows:30}"
                       v-model="element.options.defaultValue"
-                      :style="{width: element.options.width}"
+                      :style="{width: element.options.width+'%'}"
                       :placeholder="element.options.placeholder"
                       :readonly="element.options.readonly"
             ></el-input>
@@ -158,14 +159,14 @@
                     v-model="element.options.defaultValue"
                     :disabled="element.options.disabled"
                     :controls-position="element.options.controlsPosition"
-                    :style="{width: element.options.width}"
+                    :style="{width: element.options.width+'%'}"
                     :readonly="element.options.readonly"
             ></el-input-number>
         </template>
 
         <template v-if="element.type == 'radio'">
             <el-radio-group v-model="element.options.defaultValue"
-                            :style="{width: element.options.width}"
+                            :style="{width: element.options.width+'%'}"
                             :disabled="element.options.disabled"
             >
                 <el-radio
@@ -179,7 +180,7 @@
 
         <template v-if="element.type == 'checkbox'">
             <el-checkbox-group v-model="element.options.defaultValue"
-                               :style="{width: element.options.width}"
+                               :style="{width: element.options.width+'%'}"
                                :disabled="element.options.disabled"
             >
                 <el-checkbox
@@ -203,7 +204,7 @@
                     :editable="element.options.editable"
                     :clearable="element.options.clearable"
                     :arrowControl="element.options.arrowControl"
-                    :style="{width: element.options.width}"
+                    :style="{width: element.options.width+'%'}"
             >
             </el-time-picker>
         </template>
@@ -220,7 +221,7 @@
                     :disabled="element.options.disabled"
                     :editable="element.options.editable"
                     :clearable="element.options.clearable"
-                    :style="{width: element.options.width}"
+                    :style="{width: element.options.width+'%'}"
             >
             </el-date-picker>
         </template>
@@ -248,7 +249,7 @@
                     :multiple="element.options.multiple"
                     :clearable="element.options.clearable"
                     :placeholder="element.options.placeholder"
-                    :style="{width: element.options.width}"
+                    :style="{width: element.options.width+'%'}"
             >
                 <el-option v-for="item in element.options.options" :key="item.value" :value="item.value"
                            :label="element.options.showLabel?item.label:item.value"></el-option>
@@ -272,7 +273,7 @@
                     :step="element.options.step"
                     :show-input="element.options.showInput"
                     :range="element.options.range"
-                    :style="{width: element.options.width}"
+                    :style="{width: element.options.width+'%'}"
             ></el-slider>
         </template>
 
@@ -281,7 +282,7 @@
             <fm-upload
                     v-model="element.options.defaultValue"
                     :disabled="element.options.disabled"
-                    :style="{'width': element.options.width}"
+                    :style="{'width': element.options.width+'%'}"
                     :width="element.options.size.width"
                     :height="element.options.size.height"
 
@@ -296,7 +297,7 @@
                 <el-input
                         v-model="element.options.defaultValue"
                         :placeholder="element.options.placeholder"
-                        :style="{width: element.options.width}"
+                        :style="{width: element.options.width+'%'}"
                         :readonly="element.options.readonly"
 
                 >
@@ -332,7 +333,7 @@
     import DictionaryDiaglog from './DictionaryDialog'
 
     export default {
-        props: ['element', 'select', 'index', 'data'],
+        props: ['element', 'select', 'index', 'data','widgetConfig'],
         components: {
             FmUpload,
             Treeselect,

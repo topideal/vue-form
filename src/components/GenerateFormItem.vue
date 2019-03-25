@@ -1,5 +1,6 @@
 <template>
     <el-form-item :label="widget.options.showLabel?widget.name:''" :prop="widget.model"
+                  :label-width="(widget.options.showLabel?(widgetFormConfig.labelWidth?widgetFormConfig.labelWidth:0):0) +'px'"
                   class="widget-view "
                   :class="{'is_req': widget.options.required}"
     >
@@ -111,7 +112,7 @@
             </div>
         </template>
         <template v-if="widget.type == 'eltable'">
-            <div :style="{'width': widget.options.width}">
+            <div :style="{'width': widget.options.width+'%'}">
                 <div align="right" style="width: 100%;padding-bottom: 10px;">
                     <el-button type="primary" @click="$refs.editable.insert({})">新增</el-button>
                     <el-button type="danger" @click="$refs.editable.removeSelecteds()">删除选中</el-button>
@@ -144,7 +145,7 @@
                     :ref="widget.model"
                     v-model.number="dataModel"
                     :placeholder="widget.options.placeholder"
-                    :style="{width: widget.options.width}"
+                    :style="{width: widget.options.width+'%'}"
                     :readonly="widget.options.readonly"
             ></el-input>
             <el-input
@@ -154,7 +155,7 @@
                     :ref="widget.model"
                     v-model="dataModel"
                     :placeholder="widget.options.placeholder"
-                    :style="{width: widget.options.width}"
+                    :style="{width: widget.options.width+'%'}"
                     :readonly="widget.options.readonly"
             ></el-input>
             </div>
@@ -168,7 +169,7 @@
                       :id="widget.model"
                       :ref="widget.model"
                       :placeholder="widget.options.placeholder"
-                      :style="{width: widget.options.width}"
+                      :style="{width: widget.options.width+'%'}"
                       :readonly="widget.options.readonly"
             ></el-input>
         </template>
@@ -183,7 +184,7 @@
                     :id="widget.model"
                     :ref="widget.model"
                     v-model="dataModel"
-                    :style="{width: widget.options.width}"
+                    :style="{width: widget.options.width+'%'}"
                     :step="widget.options.step"
                     :readonly="widget.options.readonly"
                     controls-position="right"
@@ -194,7 +195,7 @@
             <el-radio-group v-model="dataModel"
                             :id="widget.model"
                             :ref="widget.model"
-                            :style="{width: widget.options.width}"
+                            :style="{width: widget.options.width+'%'}"
                             :disabled="widget.options.disabled"
             >
                 <el-radio
@@ -213,7 +214,7 @@
             <el-checkbox-group v-model="dataModel"
                                :id="widget.model"
                                :ref="widget.model"
-                               :style="{width: widget.options.width}"
+                               :style="{width: widget.options.width+'%'}"
                                :disabled="widget.options.disabled"
             >
                 <el-checkbox
@@ -244,7 +245,7 @@
                     :clearable="widget.options.clearable"
                     :arrowControl="widget.options.arrowControl"
                     :value-format="widget.options.format"
-                    :style="{width: widget.options.width}"
+                    :style="{width: widget.options.width+'%'}"
             >
             </el-time-picker>
         </template>
@@ -264,7 +265,7 @@
                     :clearable="widget.options.clearable"
                     :value-format="widget.options.timestamp ? 'timestamp' : widget.options.format"
                     :format="widget.options.format"
-                    :style="{width: widget.options.width}"
+                    :style="{width: widget.options.width+'%'}"
             >
             </el-date-picker>
         </template>
@@ -298,7 +299,7 @@
                     :multiple="widget.options.multiple"
                     :clearable="widget.options.clearable"
                     :placeholder="widget.options.placeholder"
-                    :style="{width: widget.options.width}"
+                    :style="{width: widget.options.width+'%'}"
             >
                 <el-option
                         v-for="item in (widget.options.remote ? widget.options.remoteOptions : widget.options.options)"
@@ -328,7 +329,7 @@
                     :step="widget.options.step"
                     :show-input="widget.options.showInput"
                     :range="widget.options.range"
-                    :style="{width: widget.options.width}"
+                    :style="{width: widget.options.width+'%'}"
             ></el-slider>
         </template>
 
@@ -339,7 +340,7 @@
                     :id="widget.model"
                     :ref="widget.model"
                     :disabled="widget.options.disabled"
-                    :style="{'width': widget.options.width}"
+                    :style="{'width': widget.options.width+'%'}"
                     :width="widget.options.size.width"
                     :height="widget.options.size.height"
             >
@@ -353,7 +354,7 @@
                         :id="widget.model"
                         :ref="widget.model"
                         :placeholder="widget.options.placeholder"
-                        :style="{width: widget.options.width}"
+                        :style="{width: widget.options.width+'%'}"
                         :readonly="widget.options.readonly"
                 >
                     <el-button slot="append" icon="el-icon-more"
